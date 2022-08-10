@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smoot" lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/149b5c3771.js" crossorigin="anonymous"></script>
   <!-- <link rel="stylesheet" href="./style.css"> -->
-  <title>Portfolio</title>
+  <title>Portafolio</title>
 </head>
 <body>
   <div class="bg-black flex flex-col">
@@ -40,13 +40,14 @@
             <li><i class="fa-brands fa-css3-alt"></i></li>
             <li><i class="fa-brands fa-square-js"></i></li>
             <li><i class="fa-brands fa-git-alt"></i></li>
+            <li><i class="fa-solid fa-flag-usa"></i></li>
           </ul>
         </div>
         <div class="flex flex-col items-end text-lg">
           <p class="">andresfelipesepulveda@live.com</p>
           <p>(+57) 322 724 9953</p>
         </div>
-        <p class="col-span-2">Se lo que estas buscando. Si llegaste a esta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, dejame hablarte de mi. Llevo 2 años dedicados a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no solo me he enfocado en las herramientas practicas, si no también en los conocimientos fundamentales del desarrollo web, y a pesar de que esto me ha exigido mas tiempo y esfuerzo, tambien me ha desarrollado una facilidad para entender y adaptarme a los desafios que me propongo enfrentar. Descubre abajo mis habilidades, plasmadas en proyectos reales que crean soluciones a necesidades concretas. Y contáctame, si también te interesa que haga parte de tus objetivos.</p>
+        <p class="col-span-2"><span class="font-bold">¡Se lo que estas buscando!</span>. Si llegaste a esta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, dejame hablarte de mi.<br>Llevo 2 años dedicados a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no solo me he enfocado en las herramientas practicas, si no también en los <span class="font-bold">conocimientos fundamentales del desarrollo web</span>, y a pesar de que esto me ha exigido mas tiempo y esfuerzo, tambien me ha desarrollado una facilidad para entender y adaptarme a las tecnologias con las cuales desarrollo.<br> <a href="#projects" class="text-blue-600 hover:text-blue-800">Descubre</a> abajo mis habilidades, plasmadas en proyectos reales que crean soluciones a necesidades concretas.<br>Y <a href="" class="text-blue-600 hover:text-blue-800">contáctame</a>, si también te interesa que haga parte de tus objetivos.</p>
       </section>
       <section class="flex flex-col w-3/6 text-white p-5">
         <h2 class="text-4xl capitalize self-center mb-5">Lenguajes & tecnologias</h2>
@@ -75,6 +76,12 @@
             <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-git"></i></li>
             <p class="col-span-3 text-[0px] transition-all" id="git-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
           </ul>
+          <ul class="grid grid-cols-3 p-2 border" id="git-desplegable">
+            <li>Fluido Ingles C1</li>
+            <li class="justify-self-end text-2xl"><i class="ml-2 fa-solid fa-flag-usa"></i></li>
+            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-usa"></i></li>
+            <p class="col-span-3 text-[0px] transition-all" id="git-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+          </ul>
           <a class="text-center" href="#projects"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
         </div>
       </section>
@@ -82,9 +89,10 @@
         <h2 class="text-white text-7xl uppercase font-bold">Proyectos</h2>
         <div class="container">
           <div class="flex justify-start gap-3 p-5">
-            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="">JavaScript Apps</a>
-            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="">Responsive Designs</a>
-            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="">API Projects</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="all-filter-btn" tipo="all">All Projects</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="js-filter-btn" tipo="javascript">JavaScript Apps</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="responsive" id="responsive-filter-btn">Responsive Designs</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="api" id="api-filter-btn">API Projects</a>
           </div>
           <div class="flex flex-wrap md:justify-evenly text-white gap-5" id="contenedor-proyectos">
             <!-- <div class="grid grid-cols-2 grid-rows-5 gap-3 max-w-sm items-center rounded-lg p-3 bg-zinc-900 shadow-inner shadow-zinc-700">
