@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="scroll-smoot" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/149b5c3771.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="bg-black flex flex-col">
+    <header>
+      <nav>
+
+      </nav>
+    </header>
+    <main style="background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png)" class="p-5 bg-fixed flex flex-col items-center justify-center w-full">
+      <section class="flex flex-col items-center justify-center h-screen">
+        <div class="container text-center w-full">
+          <h1 class="text-white font-bold text-8xl capitalize">conóceme como<br><span>desarrollador <span class="capitalize text-blue-600">frontend</span></span></h1>
+        </div>
+        <div class="container flex flex-col items-center mt-10">
+          <div class="text-white w-full mt-10 border-2 border-black border-t-neutral-50"></div>
+          <div class="text-white w-5/6 mt-10 border-2 border-black border-t-neutral-400"></div>
+          <div class="text-white w-4/6 mt-10 border-2 border-black border-t-neutral-500"></div>
+          <div class="text-white w-3/6 mt-10 border-2 border-black border-t-neutral-600"></div>
+          <div class="text-white w-2/6 mt-10 border-2 border-black border-t-neutral-700"></div>
+          <div class="text-white w-1/6 mt-10 border-2 border-black border-t-neutral-800"></div>
+          <a href="#profile"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
+        </div>
+      </section>
+      <section class="rounded-md grid bg-neutral-900 text-white grid-cols-3 grid-rows-2 p-10" id="profile">
+        <img src="/Users/user/Desktop/profilePhoto.jpeg" alt="" class="row-span-2 max-h-80 w-auto place-self-center">
+        <div class="flex flex-col">
+          <h2 class="text-5xl font-bold">Andres Sepulveda</h2>
+          <ul class="flex w-full justify-evenly mt-5 text-3xl">
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3-alt"></i></li>
+            <li><i class="fa-brands fa-square-js"></i></li>
+            <li><i class="fa-brands fa-git-alt"></i></li>
+          </ul>
+        </div>
+        <div class="flex flex-col items-end text-lg">
+          <p class="">andresfelipesepulveda@live.com</p>
+          <p>(+57) 322 724 9953</p>
+        </div>
+        <p class="col-span-2">Se lo que estas buscando. Si llegaste a esta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, dejame hablarte de mi. Llevo 2 años dedicados a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no solo me he enfocado en las herramientas practicas, si no también en los conocimientos fundamentales del desarrollo web, y a pesar de que esto me ha exigido mas tiempo y esfuerzo, tambien me ha desarrollado una facilidad para entender y adaptarme a los desafios que me propongo enfrentar. Descubre abajo mis habilidades, plasmadas en proyectos reales que crean soluciones a necesidades concretas. Y contáctame, si también te interesa que haga parte de tus objetivos.</p>
+      </section>
+      <section class="flex flex-col w-3/6 text-white p-5">
+        <h2 class="text-4xl capitalize self-center mb-5">Lenguajes & tecnologias</h2>
+        <div class="flex flex-col" id="contenedor-desplegables">
+          <ul class="grid grid-cols-3 p-2 border" id="html-desplegable">
+            <li>HTML</li>
+            <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-html5"></i></li>
+            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-html"></i></li>
+            <p class="col-span-3 text-[0px] transition-all" id="html-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+          </ul>
+          <ul class="grid grid-cols-3 p-2 border" id="css-desplegable">
+            <li>CSS</li>
+            <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-css3-alt"></i></li>
+            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-css"></i></li>          
+            <p class="col-span-3 text-[0px] transition-all" id="css-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+          </ul>
+          <ul class="grid grid-cols-3 p-2 border" id="js-desplegable">
+            <li>JavaScript</li>
+            <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-square-js"></i></li>
+            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-js"></i></li>          
+            <p class="col-span-3 text-[0px] transition-all" id="js-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+          </ul>
+          <ul class="grid grid-cols-3 p-2 border" id="git-desplegable">
+            <li>Git & GitHub</li>
+            <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-git-alt"></i></li>
+            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-git"></i></li>
+            <p class="col-span-3 text-[0px] transition-all" id="git-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+          </ul>
+          <a class="text-center" href="#projects"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
+        </div>
+      </section>
+      <section class="rounded-md bg-black w-full p-16 text-center" id="projects">
+        <h2 class="text-white text-7xl uppercase font-bold">Proyectos</h2>
+        <div class="container">
+          <div class="flex justify-start gap-3 p-5">
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="">JavaScript Apps</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="">Responsive Designs</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="">API Projects</a>
+          </div>
+          <div class="flex flex-wrap md:justify-evenly text-white gap-5" id="contenedor-proyectos">
+            <!-- <div class="grid grid-cols-2 grid-rows-5 gap-3 max-w-sm items-center rounded-lg p-3 bg-zinc-900 shadow-inner shadow-zinc-700">
+              <img class="col-span-2 row-span-2" src="" alt="">
+              <h3 class="col-span-2 row-span-1 justify-self-start">Formulario</h3>
+              <p class="col-span-2 row-span-1 text-left">Formulario de envio de email con interfaz atractiva que cuenta con validación de email y alertas al usuario</p>
+              <a class="col-span-1 row-span-1 border-2 border-purple-700 mx-5 text-purple-700 rounded-lg hover:bg-purple-700 hover:text-white transition-all" href="">Demo</a>
+              <a class="col-span-1 row-span-1 border-2 border-purple-700 mx-5 text-purple-700 rounded-lg hover:bg-purple-700 hover:text-white transition-all" href="">Code</a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="grid grid-cols-3 p-10 place-items-center">
+        <div class="flex flex-col gap-40 place-items-center col-span-1">
+          <h2 class="text-white text-5xl font-bold">Educación</h2>
+          <p class="text-white">  I first got interested in programming and eventually my focus landed in the web development industry so I approched front end technologies that would allow me to create awesome websites and applications that both I and my users love.<br>I've been traveling my own journey from an autodidact approach learning through the best resources found on internet, and by practicing several hours each new concept and knowledge I learned...</p>
+        </div>
+        <div class="col-span-2">
+          <h2>Certificados</h2>
+          <div class="grid grid-cols-4 place-items-center">
+            <a class="text-white text-4xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-left"><i class="fa-solid fa-angle-left"></i></a>
+            <div class="col-span-2" id="slider"></div>
+            <a class="text-white text-4xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-right"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
