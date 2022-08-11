@@ -28,7 +28,7 @@
         img: './medios/ss_form_envio_email.png',
         descripcion: 'Formulario de envio de email con interfaz atractiva que cuenta con validación de email y alertas al usuario',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/validacion_formulario',
         tipo: 'javascript'
       },
       {
@@ -36,7 +36,7 @@
         img: './medios/ss_administrador_citas.png',
         descripcion: 'Simula la asignación y administración de una cita de veterinaria mediante un formulario y mantiene la información del cliente almacenada mediante indexedDB',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/administrador_citas',
         tipo: 'javascript'
       },
       {
@@ -44,7 +44,7 @@
         img: './medios/ss_crm_indexedDb.png',
         descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la api de indexedDB',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/CRM-de-clientes',
         tipo: 'javascript'
       },
       {
@@ -52,7 +52,7 @@
         img: './medios/ss_eddie_homepage.png',
         descripcion: 'Diseño de pagina para una agencia de desarrollo web, utilizando html y css puro, con multiples componentes y funcionalidades',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/devChallenge_ediHomePage',
         tipo: 'responsive'
       },
       {
@@ -60,7 +60,7 @@
         img: './medios/ss_landing_responsive.png',
         descripcion: 'Landing page estatica que pretende vender planes de suscripcion a un exchange de cryptomonedas, en este ejemplo de pagina se emplean multiples herramientas de css y html',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/landing-page-crypto-exchange',
         tipo: 'responsive'
       },
       {
@@ -68,7 +68,7 @@
         img: './medios/ss_carrito_local_storage.png',
         descripcion: 'Este proyecto simula un E-commerce donde se puede interactivamente agregar productos al carrito y este se salva en local storage y vuelve a ser mostrado al cliente asi se recargue la pagina',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/e-commerce-carrito-abandonado',
         tipo: 'javascript'
       },
       {
@@ -76,7 +76,7 @@
         img: './medios/ss_cotizador_seguros.png',
         descripcion: 'En este proyecto se simula una interfaz en la que el usuario puede ingresar la informacion de su vehiculo y segun esta se le cotizara un seguro con un precio y tipo de seguro especifico para su vehiculo',
         demoUrl: '',
-        codeUrl: '',
+        codeUrl: 'https://github.com/AndresCpulveda/cotizador-de-seguros',
         tipo: 'javascript'
       },
     ]
@@ -182,10 +182,12 @@
       const demoBtn = document.createElement('a');
       demoBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer');
       demoBtn.setAttribute('src', '');
+      demoBtn.setAttribute('target', '_blank');
       demoBtn.textContent = 'Demo'
       const codeBtn = document.createElement('a');
       codeBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer');
-      codeBtn.setAttribute('src', '');
+      codeBtn.setAttribute('href', cur.codeUrl);
+      codeBtn.setAttribute('target', '_blank');
       codeBtn.textContent = 'Code'
 
       const contenedorProyecto = document.createElement('div');
