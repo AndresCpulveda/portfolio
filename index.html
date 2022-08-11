@@ -17,9 +17,9 @@
       </nav>
     </header>
     <main style="background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png)" class="p-5 bg-fixed flex flex-col items-center justify-center w-full">
-      <section class="flex flex-col items-center justify-center h-screen">
+      <section class="flex flex-col items-center justify-center h-screen mb-16 lg:mb-1">
         <div class="container text-center w-full">
-          <h1 class="text-white font-bold text-8xl capitalize">conóceme como<br><span>desarrollador <span class="capitalize text-blue-600">frontend</span></span></h1>
+          <h1 class="text-white font-bold text-5xl sm:mt-20 sm:text-8xl capitalize">conóceme como<br><span>desarrollador <span class="capitalize text-blue-600">frontend</span></span></h1>
         </div>
         <div class="container flex flex-col items-center mt-10">
           <div class="text-white w-full mt-10 border-2 border-black border-t-neutral-50"></div>
@@ -31,9 +31,9 @@
           <a href="#profile"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
         </div>
       </section>
-      <section class="rounded-md grid bg-neutral-900 text-white grid-cols-3 grid-rows-2 p-10" id="profile">
-        <img src="/Users/user/Desktop/profilePhoto.jpeg" alt="" class="row-span-2 max-h-80 w-auto place-self-center">
-        <div class="flex flex-col">
+      <section class="rounded-md bg-neutral-900 text-white flex flex-col gap-5 md:grid md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 p-7" id="profile">
+        <img src="/Users/user/Desktop/profilePhoto.jpeg" alt="" class="row-span-2 max-w-sm w-auto place-self-center md:max-h-80">
+        <div class="flex flex-col justify-center order-first text-center md:col-span-2 lg:order-none lg:row-span-1 lg:col-span-1 lg:text-left">
           <h2 class="text-5xl font-bold">Andres Sepulveda</h2>
           <ul class="flex w-full justify-evenly mt-5 text-3xl">
             <li><i class="fa-brands fa-html5"></i></li>
@@ -43,11 +43,11 @@
             <li><i class="fa-solid fa-flag-usa"></i></li>
           </ul>
         </div>
-        <div class="flex flex-col items-end text-lg">
+        <div class="flex flex-col justify-center text-md text-gray-500 md:text-lg row-span-1 lg:items-end lg:col-span-1">
           <p class="">andresfelipesepulveda@live.com</p>
           <p>(+57) 322 724 9953</p>
         </div>
-        <p class="col-span-2"><span class="font-bold">¡Se lo que estas buscando!</span>. Si llegaste a esta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, dejame hablarte de mi.<br>Llevo 2 años dedicados a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no solo me he enfocado en las herramientas practicas, si no también en los <span class="font-bold">conocimientos fundamentales del desarrollo web</span>, y a pesar de que esto me ha exigido mas tiempo y esfuerzo, tambien me ha desarrollado una facilidad para entender y adaptarme a las tecnologias con las cuales desarrollo.<br> <a href="#projects" class="text-blue-600 hover:text-blue-800">Descubre</a> abajo mis habilidades, plasmadas en proyectos reales que crean soluciones a necesidades concretas.<br>Y <a href="" class="text-blue-600 hover:text-blue-800">contáctame</a>, si también te interesa que haga parte de tus objetivos.</p>
+        <p class="col-span-3 row-span-2 lg:row-span-1 lg:col-span-2"><span class="font-bold">¡Sé lo que estás buscando!</span>. Si llegaste a ésta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, déjame hablarte de mi.<br>Llevo 2 años dedicados a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no sólo me he enfocado en las herramientas prácticas, sino también en los <span class="font-bold">conocimientos fundamentales del desarrollo web</span>, y a pesar de que esto me ha exigido mas tiempo y esfuerzo, también me ha desarrollado una facilidad para entender y adaptarme a las tecnologías con las cuales desarrollo.<br> <a href="#projects" class="text-blue-600 hover:text-blue-800">Descubre</a> abajo mis habilidades, plasmadas en proyectos reales que crean soluciones a necesidades concretas.<br>Y <a href="" class="text-blue-600 hover:text-blue-800">contáctame</a>, si también te interesa que haga parte de tus objetivos.</p>
       </section>
       <section class="flex flex-col w-3/6 text-white p-5">
         <h2 class="text-4xl capitalize self-center mb-5">Lenguajes & tecnologias</h2>
@@ -56,31 +56,31 @@
             <li>HTML</li>
             <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-html5"></i></li>
             <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-html"></i></li>
-            <p class="col-span-3 text-[0px] transition-all" id="html-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+            <p class="col-span-3 text-[0px] transition-all" id="html-text">Si bien HTML puede ser un lenguaje de marcado facil y rapido de aprender, este cuenta también con muchas etiquetas y características poco usadas como el uso de HTML semántico que puede llegar a ser muy util, en especial en el desarrollo web.</p>
           </ul>
           <ul class="grid grid-cols-3 p-2 border" id="css-desplegable">
             <li>CSS</li>
             <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-css3-alt"></i></li>
             <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-css"></i></li>          
-            <p class="col-span-3 text-[0px] transition-all" id="css-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+            <p class="col-span-3 text-[0px] transition-all" id="css-text">CSS es un lenguaje lleno de posibilidades, donde siempre estoy descubriendo cosas nuevas, es quizas el lenguaje al que más tiempo le empleé durante mis inicios aprendiendo desarrollo frontend y es un lenguaje con el que tengo basta seguridad y comodidad.</p>
           </ul>
           <ul class="grid grid-cols-3 p-2 border" id="js-desplegable">
             <li>JavaScript</li>
             <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-square-js"></i></li>
             <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-js"></i></li>          
-            <p class="col-span-3 text-[0px] transition-all" id="js-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+            <p class="col-span-3 text-[0px] transition-all" id="js-text">Sin duda alguna, JavaScript es el lenguaje fundamental del desarrollo frontend y por esto mismo, es el lenguaje en que más me he enfocado desde el inicio de mi aprendizaje, actualmente lo domino con facilidad en sus versiones mas recientes de ECMAScript, al igual que muchas de sus APIs internas como DOM, Web Storage, IndexedDB, Notifications Api, etc...</p>
           </ul>
           <ul class="grid grid-cols-3 p-2 border" id="git-desplegable">
             <li>Git & GitHub</li>
             <li class="justify-self-end text-2xl"><i class="ml-2 fa-brands fa-git-alt"></i></li>
             <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-git"></i></li>
-            <p class="col-span-3 text-[0px] transition-all" id="git-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+            <p class="col-span-3 text-[0px] transition-all" id="git-text">El control de versiones es algo fundamental para todo proyecto de cualquier magnitud, por eso empleo git y github para todos mis desarrollos, la practicidad y utilidad que brindan todas las funciones de git me permite un trabajo mucho mas fluido y productivo.</p>
           </ul>
           <ul class="grid grid-cols-3 p-2 border" id="git-desplegable">
             <li>Fluido Ingles C1</li>
             <li class="justify-self-end text-2xl"><i class="ml-2 fa-solid fa-flag-usa"></i></li>
-            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-usa"></i></li>
-            <p class="col-span-3 text-[0px] transition-all" id="git-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci soluta aut illum laudantium fugiat voluptates molestiae aliquid sequi consectetur.</p>
+            <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-english"></i></li>
+            <p id="english-text" class="col-span-3 text-[0px] transition-all" id="git-text">Adicionalmente a las tecnologías, tengo un nivel de ingles fluido que me permite comunicarme con facilidad en este idioma y más importante, me permite consumir todo tipo de contenido. Esto me facilita entender documentación que no este traducida y tener muchas opciones a la hora de adquirir nuevo conocimiento.</p>
           </ul>
           <a class="text-center" href="#projects"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
         </div>
@@ -89,7 +89,7 @@
         <h2 class="text-white text-7xl uppercase font-bold">Proyectos</h2>
         <div class="container">
           <div class="flex justify-start gap-3 p-5">
-            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="all-filter-btn" tipo="all">All Projects</a>
+            <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="all-filter-btn" tipo="all">Todos</a>
             <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="js-filter-btn" tipo="javascript">JavaScript Apps</a>
             <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="responsive" id="responsive-filter-btn">Responsive Designs</a>
             <a class="border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="api" id="api-filter-btn">API Projects</a>
@@ -105,13 +105,13 @@
           </div>
         </div>
       </section>
-      <section class="grid grid-cols-3 p-10 place-items-center">
-        <div class="flex flex-col gap-40 place-items-center col-span-1">
-          <h2 class="text-white text-5xl font-bold">Educación</h2>
-          <p class="text-white">  I first got interested in programming and eventually my focus landed in the web development industry so I approched front end technologies that would allow me to create awesome websites and applications that both I and my users love.<br>I've been traveling my own journey from an autodidact approach learning through the best resources found on internet, and by practicing several hours each new concept and knowledge I learned...</p>
+      <section class="grid grid-cols-5 p-10 place-items-center">
+        <div class="flex flex-col gap-40 place-items-center col-span-2">
+          <h2 class="text-white text-5xl font-bold">Aprendizaje</h2>
+          <p class="text-white">Desde que inicié mi aprendizaje quería aprender las tecnoogías <span class="font-bold">más actualizadas</span> y utilizadas actualmente.<br>Me di cuenta que la industria avanza rápidamente y que el único lugar donde siempre podría encontrar nuevo conocimiento y mantenerme a la vanguardia de las <span class="font-bold">nuevas herramientas</span> era en internet.<br>Por esto mismo decidí <span class="font-bold">apropiarme de mi aprendizaje</span> desde un enfoque autodidacta, encontrando los recursos de mayor calidad y más completos que hay en el internet. Durante todo este tiempo he completado multiples certificaciones y sobre todo una <span class="font-bold">gran cantidad de horas</span> empleadas poniendo en práctica y profundizando cada concepto nuevo que aprendo. Desde lo más fundamental y básico, hasta lo más práctico y funcional.</p>
         </div>
-        <div class="col-span-2">
-          <h2>Certificados</h2>
+        <div class="col-span-3 text-center">
+          <!-- <h2 class="text-white text-3xl mb-5 capitalize">certificaciones</h2> -->
           <div class="grid grid-cols-4 place-items-center">
             <a class="text-white text-4xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-left"><i class="fa-solid fa-angle-left"></i></a>
             <div class="col-span-2" id="slider"></div>

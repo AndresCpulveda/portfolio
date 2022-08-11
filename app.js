@@ -5,6 +5,7 @@
     const arrowDownCSS = document.querySelector('#arrow-down-css');
     const arrowDownJS = document.querySelector('#arrow-down-js');
     const arrowDownGIT = document.querySelector('#arrow-down-git');
+    const arrowDownEnglish = document.querySelector('#arrow-down-english');
     const slideRight = document.querySelector('#slide-right')
     const slideLeft = document.querySelector('#slide-left')
     //Text
@@ -12,6 +13,7 @@
     const cssText = document.querySelector('#css-text');
     const jsText = document.querySelector('#js-text');
     const gitText = document.querySelector('#git-text');
+    const englishText = document.querySelector('#english-text');
     //Containers
     const slider = document.querySelector('#slider')
     const contenedorProyectos = document.querySelector('#contenedor-proyectos')
@@ -81,7 +83,7 @@
       },
     ]
     let certificados = [
-      './medios/basicoJS-1copy copy.png', './medios/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/diplomaTerminal-1copy copy.png', './medios/responsiveDesignCertificationcopy copy.png'
+      './medios/certificaciones/diploma-frontend-developer-practico.png','./medios/basicoJS-1copy copy.png', './medios/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/diplomaTerminal-1copy copy.png', './medios/responsiveDesignCertificationcopy copy.png', './medios/certificaciones/diploma-html-practico.png', './medios/certificaciones/diploma-mobile-first.png'
     ]
 
 //Event Listeners
@@ -104,6 +106,10 @@
   arrowDownGIT.addEventListener('click', () => {
     gitText.classList.toggle('text-[0px]')
     arrowDownGIT.classList.toggle('rotate-180')
+  });
+  arrowDownEnglish.addEventListener('click', () => {
+    englishText.classList.toggle('text-[0px]')
+    arrowDownEnglish.classList.toggle('rotate-180')
   });
 
   jsFilterBtn.addEventListener('click', filtrarProyectos)
