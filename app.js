@@ -84,7 +84,7 @@
       {
         nombre: 'Portafolio',
         img: './medios/ss_portafolio.png',
-        descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript, abajo en el boton de "Code" podras ver como esta desarrollado',
+        descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, te lo muestro para que abajo en el boton de "Code" puedas ver como esta desarrollado, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript.',
         demoUrl: 'https://portfolio-andres-sepulveda.netlify.app/',
         codeUrl: 'https://github.com/AndresCpulveda/portfolio',
         tipo: 'javascript'
