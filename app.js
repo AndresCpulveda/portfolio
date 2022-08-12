@@ -187,7 +187,7 @@
     list.forEach(cur => {
       const demoBtn = document.createElement('a');
       demoBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer', 'text-sm', 'sm:text-base', 'md:text-lg');
-      demoBtn.setAttribute('src', cur.demoUrl);
+      demoBtn.setAttribute('href', cur.demoUrl);
       demoBtn.setAttribute('target', '_blank');
       demoBtn.textContent = 'Demo'
       const codeBtn = document.createElement('a');
