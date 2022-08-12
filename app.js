@@ -61,7 +61,7 @@
         nombre: 'Landing page Exchange de Crypto',
         img: './medios/ss_landing_responsive.png',
         descripcion: 'Landing page estatica que pretende vender planes de suscripcion a un exchange de cryptomonedas, en este ejemplo de pagina se emplean multiples herramientas de css y html',
-        demoUrl: 'https://andrescpulveda.github.io//landing-page-crypto-exchange',
+        demoUrl: 'https://andrescpulveda.github.io/landing-page-crypto-exchange/',
         codeUrl: 'https://github.com/AndresCpulveda/landing-page-crypto-exchange',
         tipo: 'responsive'
       },
