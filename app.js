@@ -29,15 +29,15 @@
         nombre: 'Formulario',
         img: './medios/ss_form_envio_email.png',
         descripcion: 'Formulario de envio de email con interfaz atractiva que cuenta con validación de email y alertas al usuario',
-        demoUrl: '',
+        demoUrl: 'https://andrescpulveda.github.io/validacion_formulario/',
         codeUrl: 'https://github.com/AndresCpulveda/validacion_formulario',
         tipo: 'javascript'
       },
       {
         nombre: 'Administrador de citas',
         img: './medios/ss_administrador_citas.png',
-        descripcion: 'Simula la asignación y administración de una cita de veterinaria mediante un formulario y mantiene la información del cliente almacenada mediante indexedDB',
-        demoUrl: '',
+        descripcion: 'Simula la asignación y administración de una cita de veterinaria mediante un formulario',
+        demoUrl: 'https://andrescpulveda.github.io/administrador_citas/',
         codeUrl: 'https://github.com/AndresCpulveda/administrador_citas',
         tipo: 'javascript'
       },
@@ -45,7 +45,7 @@
         nombre: 'CRM de clientes',
         img: './medios/ss_crm_indexedDb.png',
         descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la api de indexedDB',
-        demoUrl: '',
+        demoUrl: 'https://andrescpulveda.github.io/CRM-de-clientes/',
         codeUrl: 'https://github.com/AndresCpulveda/CRM-de-clientes',
         tipo: 'javascript'
       },
@@ -53,7 +53,7 @@
         nombre: 'Diseño responsive de una web',
         img: './medios/ss_eddie_homepage.png',
         descripcion: 'Diseño de pagina para una agencia de desarrollo web, utilizando html y css puro, con multiples componentes y funcionalidades',
-        demoUrl: '',
+        demoUrl: 'https://edihomepage.netlify.app/',
         codeUrl: 'https://github.com/AndresCpulveda/devChallenge_ediHomePage',
         tipo: 'responsive'
       },
@@ -61,7 +61,7 @@
         nombre: 'Landing page Exchange de Crypto',
         img: './medios/ss_landing_responsive.png',
         descripcion: 'Landing page estatica que pretende vender planes de suscripcion a un exchange de cryptomonedas, en este ejemplo de pagina se emplean multiples herramientas de css y html',
-        demoUrl: '',
+        demoUrl: 'https://andrescpulveda.github.io//landing-page-crypto-exchange',
         codeUrl: 'https://github.com/AndresCpulveda/landing-page-crypto-exchange',
         tipo: 'responsive'
       },
@@ -69,7 +69,7 @@
         nombre: 'E-commerce con productos y carrito abandonado',
         img: './medios/ss_carrito_local_storage.png',
         descripcion: 'Este proyecto simula un E-commerce donde se puede interactivamente agregar productos al carrito y este se salva en local storage y vuelve a ser mostrado al cliente asi se recargue la pagina',
-        demoUrl: '',
+        demoUrl: 'https://carrito-funcional-local-storage.netlify.app/',
         codeUrl: 'https://github.com/AndresCpulveda/e-commerce-carrito-abandonado',
         tipo: 'javascript'
       },
@@ -77,7 +77,7 @@
         nombre: 'Cotizador de seguros',
         img: './medios/ss_cotizador_seguros.png',
         descripcion: 'En este proyecto se simula una interfaz en la que el usuario puede ingresar la informacion de su vehiculo y segun esta se le cotizara un seguro con un precio y tipo de seguro especifico para su vehiculo',
-        demoUrl: '',
+        demoUrl: 'https://andrescpulveda.github.io/cotizador-de-seguros/',
         codeUrl: 'https://github.com/AndresCpulveda/cotizador-de-seguros',
         tipo: 'javascript'
       },
@@ -187,7 +187,7 @@
     list.forEach(cur => {
       const demoBtn = document.createElement('a');
       demoBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer', 'text-sm', 'sm:text-base', 'md:text-lg');
-      demoBtn.setAttribute('src', '');
+      demoBtn.setAttribute('src', cur.demoUrl);
       demoBtn.setAttribute('target', '_blank');
       demoBtn.textContent = 'Demo'
       const codeBtn = document.createElement('a');
