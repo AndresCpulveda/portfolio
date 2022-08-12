@@ -81,6 +81,14 @@
         codeUrl: 'https://github.com/AndresCpulveda/cotizador-de-seguros',
         tipo: 'javascript'
       },
+      {
+        nombre: 'Portafolio',
+        img: './medios/ss_portafolio.png',
+        descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript, abajo en el boton de "Code" podras ver como esta desarrollado',
+        demoUrl: 'https://portfolio-andres-sepulveda.netlify.app/',
+        codeUrl: 'https://github.com/AndresCpulveda/portfolio',
+        tipo: 'javascript'
+      },
     ]
     let certificados = [
       './medios/certificaciones/diploma-frontend-developer-practico.png','./medios/certificaciones/basicoJS-1copy copy.png', './medios/certificaciones/diploma-html-practico.png', './medios/certificaciones/diploma-mobile-first.png', './medios/certificaciones/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/certificaciones/diplomaTerminal-1copy copy.png', './medios/certificaciones/responsiveDesignCertificationcopy copy.png'
