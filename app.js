@@ -83,7 +83,7 @@
       },
     ]
     let certificados = [
-      './medios/certificaciones/diploma-frontend-developer-practico.png','./medios/basicoJS-1copy copy.png', './medios/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/diplomaTerminal-1copy copy.png', './medios/responsiveDesignCertificationcopy copy.png', './medios/certificaciones/diploma-html-practico.png', './medios/certificaciones/diploma-mobile-first.png'
+      './medios/certificaciones/diploma-frontend-developer-practico.png','./medios/certificaciones/basicoJS-1copy copy.png', './medios/certificaciones/diploma-html-practico.png', './medios/certificaciones/diploma-mobile-first.png', './medios/certificaciones/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/certificaciones/diplomaTerminal-1copy copy.png', './medios/certificaciones/responsiveDesignCertificationcopy copy.png'
     ]
 
 //Event Listeners
@@ -186,18 +186,18 @@
     console.log(list);
     list.forEach(cur => {
       const demoBtn = document.createElement('a');
-      demoBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer');
+      demoBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer', 'text-sm', 'sm:text-base', 'md:text-lg');
       demoBtn.setAttribute('src', '');
       demoBtn.setAttribute('target', '_blank');
       demoBtn.textContent = 'Demo'
       const codeBtn = document.createElement('a');
-      codeBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer');
+      codeBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer', 'text-sm', 'sm:text-base', 'md:text-lg');
       codeBtn.setAttribute('href', cur.codeUrl);
       codeBtn.setAttribute('target', '_blank');
       codeBtn.textContent = 'Code'
 
       const contenedorProyecto = document.createElement('div');
-      contenedorProyecto.classList.add('grid', 'grid-cols-2', 'grid-rows-5', 'gap-3', 'max-w-sm', 'items-center', 'rounded-lg', 'p-3', 'bg-zinc-900', 'shadow-inner', 'shadow-zinc-700');
+      contenedorProyecto.classList.add('grid', 'grid-cols-2', 'grid-rows-5', 'max-w-sm', 'items-center', 'rounded-lg', 'p-3', 'bg-zinc-900', 'shadow-inner', 'shadow-zinc-700');
       const proyectoImg = document.createElement('img');
       proyectoImg.classList.add('col-span-2', 'row-span-2', 'rounded-md', 'cursor-pointer')
       proyectoImg.setAttribute('src', cur.img)
@@ -205,7 +205,7 @@
       titulo.classList.add('col-span-2', 'row-span-1', 'justify-self-start');
       titulo.textContent = cur.nombre;
       const descripcion = document.createElement('p');
-      descripcion.classList.add('col-span-2', 'row-span-1', 'text-left');
+      descripcion.classList.add('col-span-2', 'row-span-1', 'text-left', 'text-sm', 'sm:text-base', 'md:text-lg');
       descripcion.textContent = cur.descripcion
       contenedorProyecto.append(proyectoImg, titulo, descripcion, demoBtn, codeBtn)
       contenedorProyectos.append(contenedorProyecto);
