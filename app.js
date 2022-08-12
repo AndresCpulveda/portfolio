@@ -84,7 +84,7 @@
       {
         nombre: 'Portafolio',
         img: './medios/ss_portafolio.png',
-        descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, te lo muestro para que abajo en el boton de "Code" puedas ver como esta desarrollado, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript.',
+        descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, te lo muestro para que abajo en el boton de "Código" puedas ver como esta desarrollado, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript.',
         demoUrl: 'https://portfolio-andres-sepulveda.netlify.app/',
         codeUrl: 'https://github.com/AndresCpulveda/portfolio',
         tipo: 'javascript'
@@ -101,22 +101,32 @@
 
   arrowDownHTML.addEventListener('click', () => {
     htmlText.classList.toggle('text-[0px]');
+    htmlText.classList.toggle('text-xs')
+    htmlText.classList.toggle('sm:text-base')
     arrowDownHTML.classList.toggle('rotate-180')
   });
   arrowDownCSS.addEventListener('click', () => {
     cssText.classList.toggle('text-[0px]')
+    cssText.classList.toggle('text-xs')
+    cssText.classList.toggle('sm:text-base')
     arrowDownCSS.classList.toggle('rotate-180')
   });
   arrowDownJS.addEventListener('click', () => {
     jsText.classList.toggle('text-[0px]')
+    jsText.classList.toggle('text-xs')
+    jsText.classList.toggle('sm:text-base')
     arrowDownJS.classList.toggle('rotate-180')
   });
   arrowDownGIT.addEventListener('click', () => {
     gitText.classList.toggle('text-[0px]')
+    gitText.classList.toggle('text-xs')
+    gitText.classList.toggle('sm:text-base')
     arrowDownGIT.classList.toggle('rotate-180')
   });
   arrowDownEnglish.addEventListener('click', () => {
     englishText.classList.toggle('text-[0px]')
+    englishText.classList.toggle('text-xs')
+    englishText.classList.toggle('sm:text-base')
     arrowDownEnglish.classList.toggle('rotate-180')
   });
 
@@ -202,7 +212,7 @@
       codeBtn.classList.add('col-span-1', 'row-span-1', 'border-2', 'border-blue-600', 'mx-5', 'text-blue-600', 'rounded-lg', 'hover:bg-blue-600', 'hover:text-white', 'transition-all', 'cursor-pointer', 'text-sm', 'sm:text-base', 'md:text-lg');
       codeBtn.setAttribute('href', cur.codeUrl);
       codeBtn.setAttribute('target', '_blank');
-      codeBtn.textContent = 'Code'
+      codeBtn.textContent = 'Código'
 
       const contenedorProyecto = document.createElement('div');
       contenedorProyecto.classList.add('grid', 'grid-cols-2', 'grid-rows-5', 'max-w-sm', 'items-center', 'rounded-lg', 'p-3', 'bg-zinc-900', 'shadow-inner', 'shadow-zinc-700');
