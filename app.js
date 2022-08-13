@@ -82,6 +82,14 @@
         tipo: 'javascript'
       },
       {
+        nombre: 'Pronostico de clima con API',
+        img: './medios/ss_api_clima.png',
+        descripcion: 'Este proyecto utiliza una api externa para obtener datos del clima de distintas ciudades y mostrarlas al usuario',
+        demoUrl: 'https://andrescpulveda.github.io/api-clima/',
+        codeUrl: 'https://github.com/AndresCpulveda/api-clima',
+        tipo: 'javascript'
+      },
+      {
         nombre: 'Portafolio',
         img: './medios/ss_portafolio.png',
         descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, te lo muestro para que abajo en el boton de "Código" puedas ver como esta desarrollado, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript.',
