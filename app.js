@@ -44,7 +44,7 @@
       {
         nombre: 'CRM de clientes',
         img: './medios/ss_crm_indexedDb.png',
-        descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la api de indexedDB',
+        descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la API de indexedDB',
         demoUrl: 'https://andrescpulveda.github.io/CRM-de-clientes/',
         codeUrl: 'https://github.com/AndresCpulveda/CRM-de-clientes',
         tipo: ['javascript']
@@ -76,7 +76,7 @@
       {
         nombre: 'Cotizador de seguros',
         img: './medios/ss_cotizador_seguros.png',
-        descripcion: 'En este proyecto se simula una interfaz en la que el usuario puede ingresar la informacion de su vehiculo y segun esta se le cotizara un seguro con un precio y tipo de seguro especifico para su vehiculo',
+        descripcion: 'En este proyecto se simula una interfaz en la que el usuario puede ingresar la informacion de su vehiculo y segun esta se le cotizará un seguro con un precio y tipo de seguro específico para su vehículo',
         demoUrl: 'https://andrescpulveda.github.io/cotizador-de-seguros/',
         codeUrl: 'https://github.com/AndresCpulveda/cotizador-de-seguros',
         tipo: ['javascript']
@@ -84,7 +84,7 @@
       {
         nombre: 'Pronostico de clima con API',
         img: './medios/ss_api_clima.png',
-        descripcion: 'Este proyecto utiliza una api externa para obtener datos del clima de distintas ciudades y mostrarlas al usuario',
+        descripcion: 'Este proyecto utiliza una API externa para obtener datos del clima de distintas ciudades y mostrarlas al usuario',
         demoUrl: 'https://andrescpulveda.github.io/api-clima/',
         codeUrl: 'https://github.com/AndresCpulveda/api-clima',
         tipo: ['api']
