@@ -90,6 +90,14 @@
         tipo: ['api']
       },
       {
+        nombre: 'Buscador de imagenes con API de Pixabay',
+        img: './medios/ss_api_pixabay.png',
+        descripcion: 'Utiliza la API de Pixabay para implementar un buscador de imágenes con paginador e interactividad',
+        demoUrl: 'https://andrescpulveda.github.io/buscador-de-imagenes-api/',
+        codeUrl: 'https://github.com/AndresCpulveda/buscador-de-imagenes-api',
+        tipo: ['api']
+      },
+      {
         nombre: 'Portafolio',
         img: './medios/ss_portafolio.png',
         descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, te lo muestro para que abajo en el boton de "Código" puedas ver como esta desarrollado, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript.',
