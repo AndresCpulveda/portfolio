@@ -98,6 +98,14 @@
         tipo: ['api']
       },
       {
+        nombre: 'Cotizador de criptomonedas con API',
+        img: './medios/ss_api_crypto.png',
+        descripcion: 'Utiliza una API para mostrar al usuario el valor actual de distintas criptomonedas del mercado',
+        demoUrl: 'https://andrescpulveda.github.io/cotizador-criptomonedas-api/',
+        codeUrl: 'https://github.com/AndresCpulveda/cotizador-criptomonedas-api',
+        tipo: ['api']
+      },
+      {
         nombre: 'Portafolio',
         img: './medios/ss_portafolio.png',
         descripcion: 'Si, este proyecto es el mismo portafolio que estas viendo en este momento, te lo muestro para que abajo en el boton de "Código" puedas ver como esta desarrollado, es un diseño 100% responsive hecho con Tailwind y dinamico gracias a Javascript.',
