@@ -252,7 +252,7 @@
       proyectoImg.classList.add('col-span-2', 'row-span-2', 'rounded-md', 'cursor-pointer')
       proyectoImg.setAttribute('src', cur.img)
       const titulo = document.createElement('h3');
-      titulo.classList.add('col-span-2', 'row-span-1', 'justify-self-start');
+      titulo.classList.add('col-span-2', 'row-span-1', 'text-left');
       titulo.textContent = cur.nombre;
       const descripcion = document.createElement('p');
       descripcion.classList.add('col-span-2', 'row-span-1', 'text-left', 'text-sm', 'sm:text-base', 'md:text-lg');
