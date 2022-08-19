@@ -34,6 +34,22 @@
         tipo: ['javascript']
       },
       {
+        nombre: 'Cotizador de criptomonedas con API',
+        img: './medios/ss_api_crypto.png',
+        descripcion: 'Utiliza una API para mostrar al usuario el valor actual de distintas criptomonedas del mercado',
+        demoUrl: 'https://andrescpulveda.github.io/cotizador-criptomonedas-api/',
+        codeUrl: 'https://github.com/AndresCpulveda/cotizador-criptomonedas-api',
+        tipo: ['api']
+      },
+      {
+        nombre: 'CRM de clientes',
+        img: './medios/ss_crm_indexedDb.png',
+        descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la API de indexedDB',
+        demoUrl: 'https://andrescpulveda.github.io/CRM-de-clientes/',
+        codeUrl: 'https://github.com/AndresCpulveda/CRM-de-clientes',
+        tipo: ['javascript']
+      },
+      {
         nombre: 'Formulario',
         img: './medios/ss_form_envio_email.png',
         descripcion: 'Formulario de envio de email con interfaz atractiva que cuenta con validación de email y alertas al usuario',
@@ -42,19 +58,19 @@
         tipo: ['javascript']
       },
       {
+        nombre: 'E-commerce con productos y carrito abandonado',
+        img: './medios/ss_carrito_local_storage.png',
+        descripcion: 'Este proyecto simula un E-commerce donde se puede interactivamente agregar productos al carrito y este se salva en local storage y vuelve a ser mostrado al cliente asi se recargue la pagina',
+        demoUrl: 'https://carrito-funcional-local-storage.netlify.app/',
+        codeUrl: 'https://github.com/AndresCpulveda/e-commerce-carrito-abandonado',
+        tipo: ['javascript']
+      },
+      {
         nombre: 'Administrador de citas',
         img: './medios/ss_administrador_citas.png',
         descripcion: 'Simula la asignación y administración de una cita de veterinaria mediante un formulario',
         demoUrl: 'https://andrescpulveda.github.io/administrador_citas/',
         codeUrl: 'https://github.com/AndresCpulveda/administrador_citas',
-        tipo: ['javascript']
-      },
-      {
-        nombre: 'CRM de clientes',
-        img: './medios/ss_crm_indexedDb.png',
-        descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la API de indexedDB',
-        demoUrl: 'https://andrescpulveda.github.io/CRM-de-clientes/',
-        codeUrl: 'https://github.com/AndresCpulveda/CRM-de-clientes',
         tipo: ['javascript']
       },
       {
@@ -72,14 +88,6 @@
         demoUrl: 'https://andrescpulveda.github.io/landing-page-crypto-exchange/',
         codeUrl: 'https://github.com/AndresCpulveda/landing-page-crypto-exchange',
         tipo: ['responsive']
-      },
-      {
-        nombre: 'E-commerce con productos y carrito abandonado',
-        img: './medios/ss_carrito_local_storage.png',
-        descripcion: 'Este proyecto simula un E-commerce donde se puede interactivamente agregar productos al carrito y este se salva en local storage y vuelve a ser mostrado al cliente asi se recargue la pagina',
-        demoUrl: 'https://carrito-funcional-local-storage.netlify.app/',
-        codeUrl: 'https://github.com/AndresCpulveda/e-commerce-carrito-abandonado',
-        tipo: ['javascript']
       },
       {
         nombre: 'Cotizador de seguros',
@@ -103,14 +111,6 @@
         descripcion: 'Utiliza la API de Pixabay para implementar un buscador de imágenes con paginador e interactividad',
         demoUrl: 'https://andrescpulveda.github.io/buscador-de-imagenes-api/',
         codeUrl: 'https://github.com/AndresCpulveda/buscador-de-imagenes-api',
-        tipo: ['api']
-      },
-      {
-        nombre: 'Cotizador de criptomonedas con API',
-        img: './medios/ss_api_crypto.png',
-        descripcion: 'Utiliza una API para mostrar al usuario el valor actual de distintas criptomonedas del mercado',
-        demoUrl: 'https://andrescpulveda.github.io/cotizador-criptomonedas-api/',
-        codeUrl: 'https://github.com/AndresCpulveda/cotizador-criptomonedas-api',
         tipo: ['api']
       },
       {
