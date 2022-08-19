@@ -26,6 +26,14 @@
     let selectorsCertificados = []
     let proyectos = [
       {
+        nombre: 'Calculadora de cuenta y propina para restaurante',
+        img: './medios/ss_calculador_propina.png',
+        descripcion: 'App que añade y elimina platillos a una cuenta y calcula la propina para entregar un total subtotal a cobrar',
+        demoUrl: 'https://andrescpulveda.github.io/calculadora-propinas/',
+        codeUrl: 'https://github.com/AndresCpulveda/calculadora-propinas',
+        tipo: ['javascript']
+      },
+      {
         nombre: 'Formulario',
         img: './medios/ss_form_envio_email.png',
         descripcion: 'Formulario de envio de email con interfaz atractiva que cuenta con validación de email y alertas al usuario',
