@@ -42,6 +42,14 @@
         tipo: ['api']
       },
       {
+        nombre: 'App en React de administrador de tareas',
+        img: './medios/ss_todo_react.png',
+        descripcion: 'App de tareas que agrega, elimina y completa tareas, realizada en React',
+        demoUrl: 'https://andrescpulveda.github.io/To-do-React-app/',
+        codeUrl: 'https://github.com/AndresCpulveda/To-do-React-app/',
+        tipo: ['react']
+      },
+      {
         nombre: 'CRM de clientes',
         img: './medios/ss_crm_indexedDb.png',
         descripcion: 'Simula un software de CRM que permite crear, leer, actualizar y borrar clientes de una base de datos usando la API de indexedDB',
