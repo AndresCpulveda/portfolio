@@ -131,7 +131,7 @@
       },
     ]
     let certificados = [
-      './medios/certificaciones/diploma-frontend-developer-practico.png','./medios/certificaciones/basicoJS-1copy copy.png', './medios/certificaciones/diploma-html-practico.png', './medios/certificaciones/diploma-mobile-first.png', './medios/certificaciones/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/certificaciones/diplomaTerminal-1copy copy.png', './medios/certificaciones/responsiveDesignCertificationcopy copy.png'
+      './medios/certificaciones/diploma-frontend-developer-practico.png', './medios/certificaciones/diploma_intro_react.png', './medios/certificaciones/basicoJS-1copy copy.png', './medios/certificaciones/diploma-html-practico.png', './medios/certificaciones/diploma-mobile-first.png', './medios/certificaciones/diplomaFundamentosIngenieriaSoftware-1copy copy.png', './medios/certificaciones/diplomaTerminal-1copy copy.png', './medios/certificaciones/responsiveDesignCertificationcopy copy.png'
     ]
 
 //Event Listeners
