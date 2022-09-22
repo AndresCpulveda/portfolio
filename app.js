@@ -21,6 +21,8 @@
     const jsFilterBtn = document.querySelector('#js-filter-btn');
     const responsiveFilterBtn = document.querySelector('#responsive-filter-btn');
     const apiFilterBtn = document.querySelector('#api-filter-btn')
+    const reactFilterBtn = document.querySelector('#react-filter-btn')
+    const nodeFilterBtn = document.querySelector('#node-filter-btn')
     const allFilterBtn = document.querySelector('#all-filter-btn')
   //Objects and arrays
     let selectorsCertificados = []
@@ -35,7 +37,7 @@
       },
       {
         nombre: 'Web site de agencia de viajes con Nodejs y Express',
-        img: './medios/ss_calculador_propin.png',
+        img: './medios/ss_agencia_viajes.png',
         descripcion: 'Demo de un website de agencia de viajes hecho con Nodejs, conexion a base de datos SQL y deployment con Heroku',
         demoUrl: 'https://vast-island-54198.herokuapp.com/',
         codeUrl: 'https://github.com/AndresCpulveda/travel-agency-with-node',
@@ -181,6 +183,8 @@
   jsFilterBtn.addEventListener('click', filtrarProyectos)
   responsiveFilterBtn.addEventListener('click', filtrarProyectos)
   apiFilterBtn.addEventListener('click', filtrarProyectos)
+  reactFilterBtn.addEventListener('click', filtrarProyectos)
+  nodeFilterBtn.addEventListener('click', filtrarProyectos)
   allFilterBtn.addEventListener('click', filtrarProyectos)
 
 //Funciones
