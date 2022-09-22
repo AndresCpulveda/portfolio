@@ -34,6 +34,14 @@
         tipo: ['javascript']
       },
       {
+        nombre: 'Web site de agencia de viajes con Nodejs y Express',
+        img: './medios/ss_calculador_propin.png',
+        descripcion: 'Demo de un website de agencia de viajes hecho con Nodejs, conexion a base de datos SQL y deployment con Heroku',
+        demoUrl: 'https://vast-island-54198.herokuapp.com/',
+        codeUrl: 'https://github.com/AndresCpulveda/travel-agency-with-node',
+        tipo: ['javascript', 'node']
+      },
+      {
         nombre: 'Cotizador de criptomonedas con API',
         img: './medios/ss_api_crypto.png',
         descripcion: 'Utiliza una API para mostrar al usuario el valor actual de distintas criptomonedas del mercado',
@@ -75,7 +83,7 @@
       },
       {
         nombre: 'Administrador de citas',
-        img: './medios/ss_administrador_citas.png',
+        img: './medios/ss_agencia_viajes.png',
         descripcion: 'Simula la asignación y administración de una cita de veterinaria mediante un formulario',
         demoUrl: 'https://andrescpulveda.github.io/administrador_citas/',
         codeUrl: 'https://github.com/AndresCpulveda/administrador_citas',
