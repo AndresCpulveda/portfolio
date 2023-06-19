@@ -1,38 +1,165 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="es">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="./medios/icon-code-solid.svg" sizes="any" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/149b5c3771.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="./style.css"> -->
-  <title>Portafolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <title>Andres Sepulveda</title>
 </head>
-<body>
-  <div class="bg-black flex flex-col">
-    <header>
-      <nav>
-
+<body class="bg-fixed bg-gradient-to-r from-slate-950 to-slate-800">
+  <div class="flex flex-col">
+    <header class="bg-[#0000001a] flex justify-between px-5 py-2">
+      <!-- <img class="max-w-[50px] h-[50px]" src="./medios/profilePhoto.png" alt=""> -->
+      <img src="./medios/logoFullWhite copy.png" onclick="goHome()" alt="website logo" class="w-12 h-12 cursor-pointer">
+      <nav class="flex justify-between w-full">
+        <ul class="flex justify-evenly text-slate-200 flex p-4 w-full text-slate-200 uppercase tracking-widest">
+          <li class="">Profile</li>
+          <li class="">Skills</li>
+          <li class="">Projects</li>
+          <li class="">Formation</li>
+        </ul>
       </nav>
+      <nav>
+        <ul class="flex p-4 text-slate-200 gap-4 px-10">
+          <li>Li</li>
+          <li>Git</li>
+          <li>Ma</li>
+        </ul>
+      </nav>
+      <span class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+      </svg>
+      </span>
     </header>
-    <main style="background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png)" class="p-1 sm:p-5 bg-fixed flex flex-col items-center justify-center w-full">
-      <section class="flex flex-col items-center justify-center h-screen mb-20">
-        <div class="container text-center w-full">
-          <h1 class="text-white font-bold text-5xl sm:mt-20 sm:text-8xl capitalize">conóceme como<br><span>desarrollador <span class="capitalize text-blue-600">frontend</span></span></h1>
+    <main class="relative p-1 sm:p-5 flex flex-col items-center justify-center w-full">
+      <section class="grid grid-cols-3 items-center justify-center w-full h-screen mb-20 gap-32">
+        <div class="container col-span-2 text-center w-full pl-32 pr-20 flex">
+          <div id="name" class="text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10">
+              <h3 class="text-2xl text-left">Hey! I am:</h3>
+              <h1 class="colorful-header text-7xl truncate text-left">Andres Sepulveda</h1>
+            </div>
+            <div class="flex gap-6">
+              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+              <div>
+                <p class="text-left">Frontend developer. I work forward to create neat and intuitive interfaces for users, always prioritizing optimization, conversion and scalability.<br/><br/>I have developed multiple apps and websites that facilitate processes along different industries, such as CRMs, responsive landing pages, a task manager application, e-commerce and more. Some of these are built as full-stack applications</p>
+              </div>
+            </div>
+          </div>
+          <div id="planner" class="hidden text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10">
+              <h3 class="text-2xl text-left">Hey! I am:</h3>
+              <h1 class="colorful-header text-7xl truncate text-left">Planner</h1>
+            </div>
+            <div class="flex gap-6">
+              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+              <div>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
+                <div class="flex">
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">code</button>
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="vet" class="hidden text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10">
+              <h3 class="text-2xl text-left">Hey! I am:</h3>
+              <h1 class="colorful-header text-7xl truncate text-left">Vet CRM</h1>
+            </div>
+            <div class="flex gap-6">
+              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+              <div>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
+                <div class="flex">
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">code</button>
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="restaurant" class="hidden text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10">
+              <h3 class="text-2xl text-left">Hey! I am:</h3>
+              <h1 class="colorful-header text-7xl truncate text-left">Restaurant CRM</h1>
+            </div>
+            <div class="flex gap-6">
+              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+              <div>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
+                <div class="flex">
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">code</button>
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ecommerce" class="hidden text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10">
+              <h3 class="text-2xl text-left">Hey! I am:</h3>
+              <h1 class="colorful-header text-7xl truncate text-left">E-Commerce</h1>
+            </div>
+            <div class="flex gap-6">
+              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+              <div>
+                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
+                <div class="flex">
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">code</button>
+                  <button class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container flex flex-col items-center mt-10">
-          <div class="text-white w-full mt-10 border-2 border-black border-t-neutral-50"></div>
-          <div class="text-white w-5/6 mt-10 border-2 border-black border-t-neutral-400"></div>
-          <div class="text-white w-4/6 mt-10 border-2 border-black border-t-neutral-500"></div>
-          <div class="text-white w-3/6 mt-10 border-2 border-black border-t-neutral-600"></div>
-          <div class="text-white w-2/6 mt-10 border-2 border-black border-t-neutral-700"></div>
-          <div class="text-white w-1/6 mt-10 border-2 border-black border-t-neutral-800"></div>
-          <a href="#profile"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
+        <div class="z-20 flex flex-col text-slate-300 gap-4">
+          <div>
+            <h2 class="text-4xl">Projects</h2>
+          </div>
+          <div class="relative flex flex-col w-fit">
+            <!-- <div class="border-l- border-b- border-white h-40 w-2"></div> -->
+            <ul id="projects-list" class="flex flex-col gap-4">
+              <li class="px-2 rounded-lg pt-4">
+                <span class="animation-to-projects-bottom-planner"></span>
+                <span class="animation-to-projects-left-planner"></span>
+                <a id="planner-btn" href="#">Planner App</a>
+              </li>
+              <li class="px-2 rounded-lg pt-4">
+                <span class="animation-to-projects-bottom-vet"></span>
+                <span class="animation-to-projects-left-vet"></span>
+                <a id="vet-btn" href="">Vet CRM</a>
+              </li>
+              <li class="px-2 rounded-lg pt-4">
+                <span class="animation-to-projects-bottom-restaurant"></span>
+                <span class="animation-to-projects-left-restaurant"></span>
+                <a id="restaurant-btn" href="">Restaurant CRM</a>
+              </li>
+              <li class="px-2 rounded-lg pt-4">
+                <span class="animation-to-projects-bottom-ecommerce"></span>
+                <span class="animation-to-projects-left-ecommerce"></span>
+                <a id="ecommerce-btn" href="">E-Commerce</a>
+              </li>
+              <li id="viewAll-cont" class="relative flex items-center rounded-lg px-2 pb-2 pt-2">
+                <span class="animation-to-projects-bottom-all"></span>
+                <span class="animation-to-projects-left-all"></span>
+                <span class="animation-to-projects-top-all"></span>
+                <span class="animation-to-projects-right-all"></span>
+                <a id="viewAll-Btn" href="#projects">View All</a>
+              </li>
+            </ul>
+            <span id="arrow-down-projects" class="test-arrow">
+              <span class="arrow"></span>
+            </span>
+          </div>
         </div>
       </section>
-      <section class="rounded-md bg-neutral-900 text-white flex flex-col gap-5 md:grid md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 p-3 sm:p-7" id="profile">
+      <section class="rounded-md bg-neutral-900 text-slate-300 flex flex-col gap-5 md:grid md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 p-3 sm:p-7" id="profile">
         <img src="./medios/profilePhoto.jpeg" alt="" class="row-span-2 max-w-[10rem] sm:max-w-xs w-auto place-self-center md:max-h-80">
         <div class="flex flex-col justify-center order-first text-center md:col-span-2 lg:order-none lg:row-span-1 lg:col-span-1 lg:text-left">
           <h2 class="text-4xl sm:text-5xl font-bold">Andres Sepulveda</h2>
@@ -50,7 +177,7 @@
         </div>
         <p class="col-span-3 row-span-2 lg:row-span-1 lg:col-span-2 text-xs sm:text-base md:text-lg"><span class="font-bold">¡Sé lo que estás buscando!</span>. Si llegaste a ésta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, déjame hablarte de mi.<br>Llevo 2 años dedicado a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no sólo me he enfocado en las herramientas prácticas, sino también en los <span class="font-bold">conocimientos fundamentales del desarrollo web</span> y a pesar de que esto me ha exigido mas tiempo y esfuerzo, también me ha desarrollado una facilidad para entender y adaptarme a las tecnologías con las cuales trabajo.<br> <a href="#projects" class="text-blue-600 hover:text-blue-800">Descubre</a> abajo mis habilidades plasmadas en proyectos reales que crean soluciones a necesidades concretas.<br>Y <a href="" class="text-blue-600 hover:text-blue-800">contáctame</a> si también te interesa que haga parte de tus objetivos.</p>
       </section>
-      <section class="flex flex-col w-full sm:w-4/6 lg:w-3/6 text-white p-5">
+      <section class="flex flex-col w-full sm:w-4/6 lg:w-3/6 text-slate-300 p-5">
         <h2 class="text-3xl md:text-4xl capitalize self-center mb-5">Lenguajes & tecnologias</h2>
         <div class="flex flex-col" id="contenedor-desplegables">
           <ul class="grid grid-cols-3 p-1 sm:p-2 border" id="html-desplegable">
@@ -83,42 +210,43 @@
             <li class="justify-self-end"><i class="cursor-pointer hover:text-lg hover:text-blue-600 duration-75 fa-solid fa-angle-down" id="arrow-down-english"></i></li>
             <p id="english-text" class="col-span-3 text-[0px] transition-all" id="git-text">Adicionalmente a las tecnologías, tengo un nivel de ingles fluido que me permite comunicarme con facilidad en este idioma y más importante, me permite consumir todo tipo de contenido. Esto me facilita entender documentación que no este traducida y tener muchas opciones a la hora de adquirir nuevo conocimiento.</p>
           </ul>
-          <a class="text-center" href="#projects"><i class="fa-solid fa-angles-down text-white text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
+          <a class="text-center" href="#projects"><i class="fa-solid fa-angles-down text-slate-300 text-4xl mt-7 hover:text-blue-600 transition-all duration-200 animate-bounce cursor-pointer"></i></a>
         </div>
       </section>
-      <section class="rounded-md bg-black w-full p-8 lg:p-16 text-center" id="projects">
-        <h2 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase font-bold">Proyectos</h2>
+      <section class="rounded-md bg-[#0000003c] rounded-xl w-full p-8 lg:p-16 text-center" id="projects">
+        <h2 class="text-slate-200 sm:text-3xl md:text-4xl lg:text-5xl py-1 tracking-widest">Projects</h2>
         <div class="container">
           <div class="flex flex-wrap justify-start gap-3 p-5">
-            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="all-filter-btn" tipo="all">Todos</a>
-            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" id="js-filter-btn" tipo="javascript">JavaScript Apps</a>
-            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="responsive" id="responsive-filter-btn">Responsive Designs</a>
-            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="api" id="api-filter-btn">API Projects</a>
-            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="react" id="react-filter-btn">React</a>
-            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md p-1 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Node</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" id="all-filter-btn" tipo="all">All</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" id="js-filter-btn" tipo="javascript">Vanila JavaScript</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="responsive" id="responsive-filter-btn">Responsive Design</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="api" id="api-filter-btn">API Integration</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="react" id="react-filter-btn">React Apps</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Node</a>
+            <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Full Stack Apps</a>
           </div>
-          <div class="flex flex-wrap justify-evenly text-white gap-5" id="contenedor-proyectos">
-            <!-- <div class="grid grid-cols-2 grid-rows-5 gap-3 max-w-sm items-center rounded-lg p-3 bg-zinc-900 shadow-inner shadow-zinc-700">
+          <div class="flex flex-wrap justify-evenly text-slate-300 gap-5" id="contenedor-proyectos">
+            <div class="grid grid-cols-2 grid-rows-5 gap-3 max-w-sm items-center rounded-lg p-3 bg-zinc-900 shadow-inner shadow-zinc-700">
               <img class="col-span-2 row-span-2" src="" alt="">
               <h3 class="col-span-2 row-span-1 justify-self-start">Formulario</h3>
               <p class="col-span-2 row-span-1 text-left">Formulario de envio de email con interfaz atractiva que cuenta con validación de email y alertas al usuario</p>
-              <a class="col-span-1 row-span-1 border-2 border-purple-700 mx-5 text-purple-700 rounded-lg hover:bg-purple-700 hover:text-white transition-all" href="">Demo</a>
-              <a class="col-span-1 row-span-1 border-2 border-purple-700 mx-5 text-purple-700 rounded-lg hover:bg-purple-700 hover:text-white transition-all" href="">Code</a>
-            </div> -->
+              <a class="col-span-1 row-span-1 border-2 border-purple-700 mx-5 text-purple-700 rounded-lg hover:bg-purple-700 hover:text-slate-300 transition-all" href="">Demo</a>
+              <a class="col-span-1 row-span-1 border-2 border-purple-700 mx-5 text-purple-700 rounded-lg hover:bg-purple-700 hover:text-slate-300 transition-all" href="">Code</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="flex flex-col lg:grid grid-cols-5 gap-10 p-10 place-items-center">
         <div class="flex flex-col gap-5 md:gap-10 lg:gap-20 col-span-2">
-          <h2 class="text-white text-4xl sm:text-5xl text-center font-bold">Aprendizaje</h2>
-          <p class="text-white text-xs sm:text-sm lg:text-base">Desde que inicié mi aprendizaje quería dominar las tecnologías <span class="font-bold">más actualizadas</span> y utilizadas actualmente.<br>Me di cuenta que la industria avanza rápidamente y que el único lugar donde siempre podría encontrar nuevo conocimiento y mantenerme a la vanguardia de las <span class="font-bold">nuevas herramientas</span> era en internet.<br>Por esto mismo decidí <span class="font-bold">apropiarme de mi aprendizaje</span> desde un enfoque autodidacta, encontrando los recursos de mayor calidad y más completos que hay en el internet. Durante todo este tiempo he completado multiples certificaciones y sobre todo una <span class="font-bold">gran cantidad de horas</span> empleadas poniendo en práctica y profundizando cada concepto nuevo que aprendo. Desde lo más fundamental y básico, hasta lo más práctico y funcional.</p>
+          <h2 class="text-slate-300 text-4xl sm:text-5xl text-center font-bold">Aprendizaje</h2>
+          <p class="text-slate-300 text-xs sm:text-sm lg:text-base">Desde que inicié mi aprendizaje quería dominar las tecnologías <span class="font-bold">más actualizadas</span> y utilizadas actualmente.<br>Me di cuenta que la industria avanza rápidamente y que el único lugar donde siempre podría encontrar nuevo conocimiento y mantenerme a la vanguardia de las <span class="font-bold">nuevas herramientas</span> era en internet.<br>Por esto mismo decidí <span class="font-bold">apropiarme de mi aprendizaje</span> desde un enfoque autodidacta, encontrando los recursos de mayor calidad y más completos que hay en el internet. Durante todo este tiempo he completado multiples certificaciones y sobre todo una <span class="font-bold">gran cantidad de horas</span> empleadas poniendo en práctica y profundizando cada concepto nuevo que aprendo. Desde lo más fundamental y básico, hasta lo más práctico y funcional.</p>
         </div>
         <div class="col-span-3 text-center">
-          <!-- <h2 class="text-white text-3xl mb-5 capitalize">certificaciones</h2> -->
+          <!-- <h2 class="text-slate-300 text-3xl mb-5 capitalize">certificaciones</h2> -->
           <div class="grid grid-cols-6 place-items-center">
-            <a class="text-white text-2xl sm:text-3xl md:text-5xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-left"><i class="fa-solid fa-angle-left"></i></a>
+            <a class="text-slate-300 text-2xl sm:text-3xl md:text-5xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-left"><i class="fa-solid fa-angle-left"></i></a>
             <div class="col-span-4" id="slider"></div>
-            <a class="text-white text-2xl sm:text-3xl md:text-5xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-right"><i class="fa-solid fa-angle-right"></i></a>
+            <a class="text-slate-300 text-2xl sm:text-3xl md:text-5xl cursor-pointer hover:text-blue-600 transition-all hover:text-5xl" href="" id="slide-right"><i class="fa-solid fa-angle-right"></i></a>
           </div>
         </div>
       </section>

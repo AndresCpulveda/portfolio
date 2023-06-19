@@ -1,5 +1,278 @@
-* {
+/* * {
   background: #000;
   color: #0f0;
   outline: solid 1px #f00;
+} */
+
+html {
+  font-family: 'Montserrat' ;
+}
+
+.colorful-header {
+  background: #2564eb;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animate_text 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes animate_text {
+  0% {
+    background: #2564eb;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  100% {
+    background: #7e22ce;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+#bar-colorful {
+  background: #2564eb;
+  animation: animate_bar 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes animate_bar {
+  0% {
+    background: #2564eb;
+  }
+  100% {
+    background: #7e22ce;
+  }
+}
+
+#projects-list li {
+  position: relative;
+  overflow: hidden;
+}
+
+#projects-list li .start-animation:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #7e22ce, #2564eb);
+  animation: animate_one .2s linear;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+@keyframes animate_one {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#projects-list li .end-animation:nth-child(1) {
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #7e22ce, #2564eb);
+  animation: animate_one_out .2s linear;
+}
+@keyframes animate_one_out {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+#projects-list li:not(#viewAll-cont) .start-animation:nth-child(2) {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #7e22ce, #2564eb);
+  animation: animate_two .2s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animate_two {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+#projects-list li:not(#viewAll-cont) .end-animation:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #7e22ce, #2564eb);
+  animation: animate_two_out .3s linear;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+@keyframes animate_two_out {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#projects-list li:not(#viewAll-cont) .start-animation:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0%;
+  height: 3px;
+  background: linear-gradient(to right, #7e22ce, #2564eb);
+  animation: animate_three .2s linear;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate_three {
+  0% {
+    /* transform: translateX(0%); */
+  }
+  100% {
+    /* transform: translateX(200%); */
+    width: 100%;
+  }
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - VIEW ALL BTN ANIMATION - - - - - - - - - - - - - - - - - - - */
+
+#arrow-down-projects.start-animation{
+  position: absolute;
+  top: 86%;
+  left: 97%;
+  width: 3px;
+  height: 55px;
+  background: linear-gradient(to top, #7e22ce, #2564eb);
+  animation: animate_arrow_drop .8s linear;
+  animation-fill-mode: forwards;
+  animation-delay: .02s;
+}
+
+@keyframes animate_arrow_drop {
+  0% {
+
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    height: 800px;
+    opacity: 0;
+  }
+}
+
+.test-arrow {
+  position: absolute;
+  top: 86%;
+  left: 96%;
+  width: 3px;
+  height: 35px;
+  background: linear-gradient(to top, #7e22ce, #2564eb);
+}
+
+.arrow {
+  position: absolute;
+  top: 90%;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #7e22ce;
+}
+
+#projects-list #viewAll-cont .start-animation:nth-child(2) {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #7e22ce, #2564eb);
+  animation: animate_two_all .2s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animate_two_all {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#projects-list #viewAll-cont .end-animation:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 200%;
+  background: linear-gradient(to bottom, #7e22ce, #2564eb);
+  animation: animate_two_all_out .3s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animate_two_all_out {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#projects-list #viewAll-cont .start-animation:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0%;
+  height: 3px;
+  background: linear-gradient(to right, #7e22ce, #2564eb);
+  animation: animate_three_all .2s linear;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate_three_all {
+  0% {
+    /* transform: translateX(0%); */
+  }
+  100% {
+    /* transform: translateX(200%); */
+    width: 100%;
+  }
+}
+
+#projects-list #viewAll-cont .end-animation:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 3px;
+  background: linear-gradient(to right, #7e22ce, #2564eb);
+  animation: animate_three_all_out .2s linear;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate_three_all_out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+    /* width: 100%; */
+  }
 }

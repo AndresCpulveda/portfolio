@@ -17,6 +17,11 @@
     //Containers
     const slider = document.querySelector('#slider')
     const contenedorProyectos = document.querySelector('#contenedor-proyectos')
+    const planner = document.querySelector('#planner')
+    const vet = document.querySelector('#vet')
+    const restaurant = document.querySelector('#restaurant')
+    const ecommerce = document.querySelector('#ecommerce')
+    const name = document.querySelector('#name')
     //Buttons
     const jsFilterBtn = document.querySelector('#js-filter-btn');
     const responsiveFilterBtn = document.querySelector('#responsive-filter-btn');
@@ -24,6 +29,31 @@
     const reactFilterBtn = document.querySelector('#react-filter-btn')
     const nodeFilterBtn = document.querySelector('#node-filter-btn')
     const allFilterBtn = document.querySelector('#all-filter-btn')
+    const viewAllBtn = document.querySelector('#viewAll-Btn')
+    const ecommerceBtn = document.querySelector('#ecommerce-btn')
+    const plannerBtn = document.querySelector('#planner-btn')
+    const restaurantBtn = document.querySelector('#restaurant-btn')
+    const vetBtn = document.querySelector('#vet-btn')
+    //Animation spans
+    const animationSpanBottomAll = document.querySelector('.animation-to-projects-bottom-all')
+    const animationSpanLeftAll = document.querySelector('.animation-to-projects-left-all')
+    const animationSpanTopAll = document.querySelector('.animation-to-projects-top-all')
+    const animationSpanRightAll = document.querySelector('.animation-to-projects-right-all')
+    
+    const animationSpanBottomEcommerce = document.querySelector('.animation-to-projects-bottom-ecommerce')
+    const animationSpanLeftEcommerce = document.querySelector('.animation-to-projects-left-ecommerce')
+    
+    const animationSpanBottomPlanner = document.querySelector('.animation-to-projects-bottom-planner')
+    const animationSpanLeftPlanner = document.querySelector('.animation-to-projects-left-planner')
+
+    const animationSpanBottomVet = document.querySelector('.animation-to-projects-bottom-vet')
+    const animationSpanLeftVet = document.querySelector('.animation-to-projects-left-vet')
+
+    const animationSpanBottomRestaurant = document.querySelector('.animation-to-projects-bottom-restaurant')
+    const animationSpanLeftRestaurant = document.querySelector('.animation-to-projects-left-restaurant')
+
+    const animationSpanArrowDrop = document.querySelector('#arrow-down-projects')
+
   //Objects and arrays
     let selectorsCertificados = []
     let proyectos = [
@@ -179,7 +209,143 @@
     englishText.classList.toggle('sm:text-base')
     arrowDownEnglish.classList.toggle('rotate-180')
   });
+  viewAllBtn.addEventListener('mouseover', () => {
+    animationSpanLeftAll.classList.remove('end-animation')
+    animationSpanLeftAll.classList.add('start-animation')
+    animationSpanTopAll.classList.remove('end-animation')
+    animationSpanTopAll.classList.add('start-animation')
+  });
+  viewAllBtn.addEventListener('mouseout', () => {
+    animationSpanLeftAll.classList.remove('start-animation')
+    animationSpanLeftAll.classList.add('end-animation')
+    animationSpanTopAll.classList.remove('start-animation')
+    animationSpanTopAll.classList.add('end-animation')
+    setTimeout(() => {
+      animationSpanArrowDrop.classList.remove('start-animation')
+      animationSpanLeftAll.classList.remove('end-animation')
+      animationSpanBottomAll.classList.remove('end-animation')
+    }, 500);
+  });
+  viewAllBtn.addEventListener('click', () => {
+    animationSpanTopAll.classList.add('start-animation')
+    animationSpanRightAll.classList.add('start-animation')
+    animationSpanArrowDrop.classList.add('start-animation')
+    setTimeout(() => {
+      animationSpanTopAll.classList.remove('start-animation')
+      animationSpanRightAll.classList.remove('start-animation')
+    }, 500);
+  });
 
+  ecommerceBtn.addEventListener('mouseover', () => {
+    animationSpanBottomEcommerce.classList.remove('end-animation')
+    animationSpanBottomEcommerce.classList.add('start-animation')
+    animationSpanLeftEcommerce.classList.remove('end-animation')
+    animationSpanLeftEcommerce.classList.add('start-animation')
+  });
+  ecommerceBtn.addEventListener('mouseout', () => {
+    animationSpanBottomEcommerce.classList.remove('start-animation')
+    animationSpanBottomEcommerce.classList.add('end-animation')
+    animationSpanLeftEcommerce.classList.remove('start-animation')
+    animationSpanLeftEcommerce.classList.add('end-animation')
+    setTimeout(() => {
+      animationSpanBottomEcommerce.classList.remove('end-animation')
+      animationSpanLeftEcommerce.classList.remove('end-animation')
+    }, 2000);
+  });
+
+  plannerBtn.addEventListener('mouseover', () => {
+    animationSpanBottomPlanner.classList.remove('end-animation')
+    animationSpanBottomPlanner.classList.add('start-animation')
+    animationSpanLeftPlanner.classList.remove('end-animation')
+    animationSpanLeftPlanner.classList.add('start-animation')
+  });
+  plannerBtn.addEventListener('mouseout', () => {
+    animationSpanBottomPlanner.classList.remove('start-animation')
+    animationSpanBottomPlanner.classList.add('end-animation')
+    animationSpanLeftPlanner.classList.remove('start-animation')
+    animationSpanLeftPlanner.classList.add('end-animation')
+    setTimeout(() => {
+      animationSpanBottomPlanner.classList.remove('end-animation')
+      animationSpanLeftPlanner.classList.remove('end-animation')
+    }, 2000);
+  });
+
+  vetBtn.addEventListener('mouseover', () => {
+    animationSpanBottomVet.classList.remove('end-animation')
+    animationSpanBottomVet.classList.add('start-animation')
+    animationSpanLeftVet.classList.remove('end-animation')
+    animationSpanLeftVet.classList.add('start-animation')
+  });
+  vetBtn.addEventListener('mouseout', () => {
+    animationSpanBottomVet.classList.remove('start-animation')
+    animationSpanBottomVet.classList.add('end-animation')
+    animationSpanLeftVet.classList.remove('start-animation')
+    animationSpanLeftVet.classList.add('end-animation')
+    setTimeout(() => {
+      animationSpanBottomVet.classList.remove('end-animation')
+      animationSpanLeftVet.classList.remove('end-animation')
+    }, 2000);
+  });
+
+  restaurantBtn.addEventListener('mouseover', () => {
+    animationSpanBottomRestaurant.classList.remove('end-animation')
+    animationSpanBottomRestaurant.classList.add('start-animation')
+    animationSpanLeftRestaurant.classList.remove('end-animation')
+    animationSpanLeftRestaurant.classList.add('start-animation')
+  });
+  restaurantBtn.addEventListener('mouseout', () => {
+    animationSpanBottomRestaurant.classList.remove('start-animation')
+    animationSpanBottomRestaurant.classList.add('end-animation')
+    animationSpanLeftRestaurant.classList.remove('start-animation')
+    animationSpanLeftRestaurant.classList.add('end-animation')
+    setTimeout(() => {
+      animationSpanBottomRestaurant.classList.remove('end-animation')
+      animationSpanLeftRestaurant.classList.remove('end-animation')
+    }, 2000);
+  });
+
+  function goHome() {
+    name.classList.remove('hidden')
+    planner.classList.add('hidden')
+    vet.classList.add('hidden')
+    restaurant.classList.add('hidden')
+    ecommerce.classList.add('hidden')
+  }
+
+  plannerBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    name.classList.add('hidden')
+    planner.classList.remove('hidden')
+    vet.classList.add('hidden')
+    restaurant.classList.add('hidden')
+    ecommerce.classList.add('hidden')
+  })
+  vetBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    name.classList.add('hidden')
+    planner.classList.add('hidden')
+    vet.classList.remove('hidden')
+    restaurant.classList.add('hidden')
+    ecommerce.classList.add('hidden')
+  })
+  restaurantBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    name.classList.add('hidden')
+    planner.classList.add('hidden')
+    vet.classList.add('hidden')
+    restaurant.classList.remove('hidden')
+    ecommerce.classList.add('hidden')
+  })
+  ecommerceBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    name.classList.add('hidden')
+    planner.classList.add('hidden')
+    vet.classList.add('hidden')
+    restaurant.classList.add('hidden')
+    ecommerce.classList.remove('hidden')
+  })
+
+  
   jsFilterBtn.addEventListener('click', filtrarProyectos)
   responsiveFilterBtn.addEventListener('click', filtrarProyectos)
   apiFilterBtn.addEventListener('click', filtrarProyectos)
