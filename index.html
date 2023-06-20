@@ -15,51 +15,60 @@
 </head>
 <body class="bg-fixed bg-gradient-to-r from-slate-950 to-slate-800">
   <div class="flex flex-col">
-    <header class="bg-[#0000001a] flex justify-between px-5 py-2">
+
+
+    <header class="z-20 fixed bg-[#0000001a] w-full bg-gradient-to-r from-[#020617] to-[#192436] to-% flex justify-between items-center px-[20px]">
       <!-- <img class="max-w-[50px] h-[50px]" src="./medios/profilePhoto.png" alt=""> -->
-      <img src="./medios/logoFullWhite copy.png" onclick="goHome()" alt="website logo" class="w-12 h-12 cursor-pointer">
+      <img src="./medios/logoFullWhite copy.png" onclick="goHome()" alt="website logo" class="w-12 h-12 my-2 cursor-pointer">
       <nav class="flex justify-between w-full">
-        <ul class="flex justify-evenly text-slate-200 flex p-4 w-full text-slate-200 uppercase tracking-widest">
-          <li class="">Profile</li>
-          <li class="">Skills</li>
-          <li class="">Projects</li>
-          <li class="">Formation</li>
+        <ul class="flex justify-evenly items-center text-slate-200 flex p-4 w-full text-slate-200 uppercase tracking-widest">
+          <li class=""><a href="#profile">Profile</a></li>
+          <li class=""><a href="#skills">Skills</a></li>
+          <li class=""><a href="#projects">Projects</a></li>
+          <li class=""><a href="#formation">Formation</a></li>
         </ul>
       </nav>
-      <nav>
-        <ul class="flex p-4 text-slate-200 gap-4 px-10">
-          <li>Li</li>
-          <li>Git</li>
-          <li>Ma</li>
+      <nav class="flex items-center">
+        <ul class="flex text-slate-200 gap-4 px-10">
+          <li><a target="_blank" href="https://www.linkedin.com/in/andrecpulveda/"><i class="fa-brands fa-linkedin-in text-slate-200 cursor-pointer text-xl"></i></a></li>
+          <li><a target="_blank" href="https://github.com/AndresCpulveda"><i class="fa-brands fa-github text-slate-200 cursor-pointer text-xl"></i></a></li>
+          <li><a target="_blank" href="#"><i class="fa-regular fa-envelope text-slate-200 cursor-pointer text-xl"></i></a></li>
         </ul>
       </nav>
-      <span class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-      </svg>
-      </span>
+      <!-- <span class="flex items-center"><i class="fa-solid fa-bars text-white cursor-pointer text-2xl"></i></span> -->
     </header>
+
+
     <main class="relative p-1 sm:p-5 flex flex-col items-center justify-center w-full">
       <section class="grid grid-cols-3 items-center justify-center w-full h-screen mb-20 gap-32">
-        <div class="container col-span-2 text-center w-full pl-32 pr-20 flex">
-          <div id="name" class="text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10">
+        <div class="relative h-full container col-span-2 text-center w-full pl-32 pr-20 flex">
+          <div id="name" class="main-card card-in text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10 ml-32">
               <h3 class="text-2xl text-left">Hey! I am:</h3>
               <h1 class="colorful-header text-7xl truncate text-left">Andres Sepulveda</h1>
             </div>
-            <div class="flex gap-6">
-              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+            <div class="presentation-cont relative flex items-center gap-6">
+              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">Frontend developer. I work forward to create neat and intuitive interfaces for users, always prioritizing optimization, conversion and scalability.<br/><br/>I have developed multiple apps and websites that facilitate processes along different industries, such as CRMs, responsive landing pages, a task manager application, e-commerce and more. Some of these are built as full-stack applications</p>
               </div>
             </div>
           </div>
-          <div id="planner" class="hidden text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10">
-              <h3 class="text-2xl text-left">Hey! I am:</h3>
+          <div id="planner" class="main-card text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10 ml-32">
+              <h3 class="text-2xl text-left">Check Out my:</h3>
               <h1 class="colorful-header text-7xl truncate text-left">Planner</h1>
             </div>
-            <div class="flex gap-6">
-              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+            <div class="presentation-cont relative flex items-center gap-6">
+              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
                 <div class="flex">
@@ -69,13 +78,17 @@
               </div>
             </div>
           </div>
-          <div id="vet" class="hidden text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10">
-              <h3 class="text-2xl text-left">Hey! I am:</h3>
+          <div id="vet" class="main-card text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10 ml-32">
+              <h3 class="text-2xl text-left">Check Out my:</h3>
               <h1 class="colorful-header text-7xl truncate text-left">Vet CRM</h1>
             </div>
-            <div class="flex gap-6">
-              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+            <div class="presentation-cont relative flex items-center gap-6">
+              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
                 <div class="flex">
@@ -85,13 +98,17 @@
               </div>
             </div>
           </div>
-          <div id="restaurant" class="hidden text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10">
-              <h3 class="text-2xl text-left">Hey! I am:</h3>
+          <div id="restaurant" class="main-card text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10 ml-32">
+              <h3 class="text-2xl text-left">Check Out my:</h3>
               <h1 class="colorful-header text-7xl truncate text-left">Restaurant CRM</h1>
             </div>
-            <div class="flex gap-6">
-              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+            <div class="presentation-cont relative flex items-center gap-6">
+              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
                 <div class="flex">
@@ -101,13 +118,17 @@
               </div>
             </div>
           </div>
-          <div id="ecommerce" class="hidden text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10">
-              <h3 class="text-2xl text-left">Hey! I am:</h3>
+          <div id="ecommerce" class="main-card text-slate-300"> 
+            <div class="flex flex-col gap-3 mb-10 ml-32">
+              <h3 class="text-2xl text-left">Check Out my:</h3>
               <h1 class="colorful-header text-7xl truncate text-left">E-Commerce</h1>
             </div>
-            <div class="flex gap-6">
-              <div id="bar-colorful" class="h-40 w-3 rounded"></div>
+            <div class="presentation-cont relative flex items-center gap-6">
+              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla commodi alias totam minima. Alias officia, veritatis dolor nesciunt minus commodi repudiandae repellendus dolorum praesentium? Odit tempora iure unde placeat aperiam cupiditate ducimus aliquid maxime itaque repellendus blanditiis est perspiciatis, dolores porro accusantium illum nulla soluta ipsum. Rem, dolorem quod!</p>
                 <div class="flex">
@@ -118,9 +139,9 @@
             </div>
           </div>
         </div>
-        <div class="z-20 flex flex-col text-slate-300 gap-4">
+        <div class="flex flex-col text-slate-300 gap-4">
           <div>
-            <h2 class="text-4xl">Projects</h2>
+            <h2 class="gradient-text text-4xl">Projects</h2>
           </div>
           <div class="relative flex flex-col w-fit">
             <!-- <div class="border-l- border-b- border-white h-40 w-2"></div> -->
@@ -164,11 +185,12 @@
         <div class="flex flex-col justify-center order-first text-center md:col-span-2 lg:order-none lg:row-span-1 lg:col-span-1 lg:text-left">
           <h2 class="text-4xl sm:text-5xl font-bold">Andres Sepulveda</h2>
           <ul class="flex w-full justify-evenly mt-5 text-3xl">
+            <li><i class="fa-brands fa-react"></i></li>
+            <li><i class="fa-brands fa-node-js"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-square-js"></i></li>
             <li><i class="fa-brands fa-html5"></i></li>
             <li><i class="fa-brands fa-css3-alt"></i></li>
-            <li><i class="fa-brands fa-square-js"></i></li>
-            <li><i class="fa-brands fa-git-alt"></i></li>
-            <li><i class="fa-solid fa-flag-usa"></i></li>
           </ul>
         </div>
         <div class="flex flex-col justify-center text-sm sm:text-base text-gray-500 md:text-lg row-span-1 lg:items-end lg:col-span-1">
@@ -177,8 +199,8 @@
         </div>
         <p class="col-span-3 row-span-2 lg:row-span-1 lg:col-span-2 text-xs sm:text-base md:text-lg"><span class="font-bold">¡Sé lo que estás buscando!</span>. Si llegaste a ésta pagina probablemente eres alguien que quiere nuevo talento de desarrolladores para su empresa o proyecto. Bien, déjame hablarte de mi.<br>Llevo 2 años dedicado a dominar todas las tecnologias y conocimientos necesarios para ser un desarrollador frontend profesional y eficiente. A diferencia de muchos no sólo me he enfocado en las herramientas prácticas, sino también en los <span class="font-bold">conocimientos fundamentales del desarrollo web</span> y a pesar de que esto me ha exigido mas tiempo y esfuerzo, también me ha desarrollado una facilidad para entender y adaptarme a las tecnologías con las cuales trabajo.<br> <a href="#projects" class="text-blue-600 hover:text-blue-800">Descubre</a> abajo mis habilidades plasmadas en proyectos reales que crean soluciones a necesidades concretas.<br>Y <a href="" class="text-blue-600 hover:text-blue-800">contáctame</a> si también te interesa que haga parte de tus objetivos.</p>
       </section>
-      <section class="flex flex-col w-full sm:w-4/6 lg:w-3/6 text-slate-300 p-5">
-        <h2 class="text-3xl md:text-4xl capitalize self-center mb-5">Lenguajes & tecnologias</h2>
+      <section id="skills" class="flex flex-col w-full sm:w-4/6 lg:w-3/6 text-slate-300 p-5">
+        <h2 class="text-3xl md:text-4xl capitalize self-center mb-5">Skills</h2>
         <div class="flex flex-col" id="contenedor-desplegables">
           <ul class="grid grid-cols-3 p-1 sm:p-2 border" id="html-desplegable">
             <li class="text-sm sm:text-base self-center">HTML</li>
@@ -236,7 +258,7 @@
           </div>
         </div>
       </section>
-      <section class="flex flex-col lg:grid grid-cols-5 gap-10 p-10 place-items-center">
+      <section id="formation" class="flex flex-col lg:grid grid-cols-5 gap-10 p-10 place-items-center">
         <div class="flex flex-col gap-5 md:gap-10 lg:gap-20 col-span-2">
           <h2 class="text-slate-300 text-4xl sm:text-5xl text-center font-bold">Aprendizaje</h2>
           <p class="text-slate-300 text-xs sm:text-sm lg:text-base">Desde que inicié mi aprendizaje quería dominar las tecnologías <span class="font-bold">más actualizadas</span> y utilizadas actualmente.<br>Me di cuenta que la industria avanza rápidamente y que el único lugar donde siempre podría encontrar nuevo conocimiento y mantenerme a la vanguardia de las <span class="font-bold">nuevas herramientas</span> era en internet.<br>Por esto mismo decidí <span class="font-bold">apropiarme de mi aprendizaje</span> desde un enfoque autodidacta, encontrando los recursos de mayor calidad y más completos que hay en el internet. Durante todo este tiempo he completado multiples certificaciones y sobre todo una <span class="font-bold">gran cantidad de horas</span> empleadas poniendo en práctica y profundizando cada concepto nuevo que aprendo. Desde lo más fundamental y básico, hasta lo más práctico y funcional.</p>

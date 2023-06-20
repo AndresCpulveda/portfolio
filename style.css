@@ -6,14 +6,25 @@
 
 html {
   font-family: 'Montserrat' ;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.gradient-text {
+  background-image: linear-gradient(0deg, #7e22ce, #2564eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .colorful-header {
   background: #2564eb;
+  background-image: linear-gradient(90deg, #7e22ce, #2564eb);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: animate_text 2s linear infinite;
+  /* animation: animate_text 2s linear infinite; */
   animation-direction: alternate;
 }
 @keyframes animate_text {
@@ -29,10 +40,25 @@ html {
   }
 }
 
-#bar-colorful {
+.presentation-cont .bar-colorful:nth-child(1) {
   background: #2564eb;
-  animation: animate_bar 2s linear infinite;
-  animation-direction: alternate;
+  animation: animate_bar 2s linear infinite alternate;
+}
+.presentation-cont .bar-colorful:nth-child(2) {
+  background: #2564eb;
+  animation: animate_bar 2s .4s linear infinite alternate;
+}
+.presentation-cont .bar-colorful:nth-child(3) {
+  background: #2564eb;
+  animation: animate_bar 2s .8s linear infinite alternate;
+}
+.presentation-cont .bar-colorful:nth-child(4) {
+  background: #2564eb;
+  animation: animate_bar 2s 1.2s linear infinite alternate;
+}
+.presentation-cont .bar-colorful:nth-child(5) {
+  background: #2564eb;
+  animation: animate_bar 2s 1.6s linear infinite alternate;
 }
 @keyframes animate_bar {
   0% {
@@ -176,8 +202,9 @@ html {
 }
 
 .test-arrow {
+  border-radius: 2px;
   position: absolute;
-  top: 86%;
+  top: 85.5%;
   left: 96%;
   width: 3px;
   height: 35px;
@@ -275,4 +302,46 @@ html {
     transform: translateX(100%);
     /* width: 100%; */
   }
+}
+
+
+.main-card {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  transform: translateX(-100%) scaleX(0);
+  opacity: 0;
+}
+
+.card-in{
+  animation: card_in .5s .2s linear forwards;
+}
+
+@keyframes card_in {
+  0% {
+    
+  }
+  100%{
+    transform: translateX(0) scaleX(100%);
+    opacity: 100%;
+  }
+}
+
+.card-out {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  transform: translateX(0) scaleX(100%);
+  opacity: 100%;
+  animation: card_out .5s linear forwards;
+}
+
+@keyframes card_out {
+ 0% {
+   /* opacity: 0; */
+ }
+ 100%{
+  opacity: 0;
+  transform: translateX(-60%) scaleX(0);
+ }
 }
