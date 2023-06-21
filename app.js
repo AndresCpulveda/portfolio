@@ -16,7 +16,7 @@
     const englishText = document.querySelector('#english-text');
     //Containers
     const slider = document.querySelector('#slider')
-    const contenedorProyectos = document.querySelector('#contenedor-proyectos')
+    // const contenedorProyectos = document.querySelector('#contenedor-proyectos')
     const planner = document.querySelector('#planner')
     const vet = document.querySelector('#vet')
     const restaurant = document.querySelector('#restaurant')

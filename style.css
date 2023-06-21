@@ -12,7 +12,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 .gradient-text {
-  background-image: linear-gradient(0deg, #7e22ce, #2564eb);
+  background-image: linear-gradient(90deg, #7e22ce, #2564eb);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
