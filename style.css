@@ -346,40 +346,12 @@ html {
  }
 }
 
-.project-card {
-  transform-style: preserve-3d;
-}
-
-.project-card:hover {
-  transform: rotateY(180deg);
-}
-
-.card {
-  backface-visibility: hidden;
-}
-
-.card-1-back {
-  transform: rotateY(180deg);
-}
-
-.card-1-front {
-  background-image: url(./medios/ss_planner.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+.project-card:hover > .card-front {
+  transform: translateY(100%);
 }
 
 .project-name:hover > .project-category .project-category-text {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  top: -100% */
   transform: translateY(-100%);
-}
-
-.project-buttons {
-  position: absolute;
-  top: 100%;
 }
 
 .project-name:hover > .project-category .project-buttons {
