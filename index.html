@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="./medios/icon-code-solid.svg" sizes="any" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/149b5c3771.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
   <title>Andres Sepulveda</title>
@@ -21,7 +18,7 @@
       <!-- <img class="max-w-[50px] h-[50px]" src="./medios/profilePhoto.png" alt=""> -->
       <img src="./medios/logoAS-mini-no_bg.png" onclick="goHome()" alt="website logo" class="w-12 h-12 my-2 cursor-pointer">
       <nav class="flex justify-between w-full">
-        <ul class="flex justify-evenly items-center text-slate-200 flex p-4 w-full text-slate-200 uppercase tracking-widest">
+        <ul class="justify-evenly items-center text-slate-200 flex p-4 w-full text-slate-200 uppercase tracking-widest hidden sm:flex">
           <li class=""><a href="#profile">Profile</a></li>
           <li class=""><a href="#skills">Skills</a></li>
           <li class=""><a href="#projects">Projects</a></li>
@@ -40,37 +37,38 @@
 
 
     <main class="relative p-1 sm:p-5 flex flex-col items-center justify-center w-full">
-      <section class="grid grid-cols-3 items-center justify-center w-full h-screen mb-20 gap-32">
-        <div class="relative h-full container col-span-2 text-center w-full pl-32 pr-20 flex">
-          <div id="name" class="main-card card-in text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10 ml-32">
+      <section class="flex flex-col sm:grid sm:grid-cols-3 items-center justify-center w-full h-screen mb-20 gap-0 sm:gap-10 lg:gap-32">
+        <div class="relative h-full sm:h-full container col-span-2 text-center w-full flex justify-center">
+          <div id="name" class="main-card card-in text-slate-300 mx-5 sm:mx-0"> 
+            <div class="flex flex-col gap-3 mb-10 sm:ml-32">
               <h3 class="text-2xl text-left">Hey! I am:</h3>
-              <h1 class="colorful-header text-7xl truncate text-left">Andres Sepulveda</h1>
+              <h1 class="colorful-header text-5xl lg:text-6xl truncate text-left hidden md:block">Andres Sepulveda</h1>
+              <h1 class="colorful-header text-5xl truncate text-left block md:hidden">Andres<br>Sepulveda</h1>
             </div>
             <div class="presentation-cont relative flex items-center gap-6">
-              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
-              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
-              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
-              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
-              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
+              <div class="hidden sm:block bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="hidden sm:block bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="hidden sm:block bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="hidden sm:block bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="hidden sm:block bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
-                <p class="text-left">Frontend developer. I work forward to create neat and intuitive interfaces for users, always prioritizing optimization, conversion and scalability.<br/><br/>I have developed multiple apps and websites that facilitate processes along different industries, such as CRMs, responsive landing pages, a task manager application, e-commerce and more. Some of these are built as full-stack applications</p>
+                <p class="text-left leading-4 lg:leading-normal">Frontend developer. I work forward to create neat and intuitive interfaces for users, always prioritizing optimization, conversion and scalability.<br/><br/>I have developed multiple apps and websites that facilitate processes along different industries, such as CRMs, responsive landing pages, a task manager application, e-commerce and more. Some of these are built as full-stack applications</p>
               </div>
             </div>
           </div>
-          <div id="planner" class="main-card text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10 ml-32">
+          <div id="planner" class="main-card text-slate-300  mx-5 sm:mx-0"> 
+            <div class="flex flex-col gap-3 mb-10 sm:ml-32">
               <h3 class="text-2xl text-left">Check Out my:</h3>
-              <h1 class="colorful-header text-7xl truncate text-left">Planner</h1>
+              <h1 class="colorful-header text-6xl truncate text-left">Planner</h1>
             </div>
             <div class="presentation-cont relative flex items-center gap-6">
-              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
-              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
-              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
-              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
-              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
+              <div class="hidden sm:block bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="hidden sm:block bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="hidden sm:block bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="hidden sm:block bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="hidden sm:block bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
-                <p class="text-left">I created this app to personally organize and measure my productivity. It allows you to add and manage tasks, as well as filter and sort them. It re creates recurring tasks automatically. It`s a great tool to organize time and responsabilities</p>
+                <p class="text-left leading-5 md:leading-normal">I created this app to personally organize and measure my productivity. It allows you to add and manage tasks, as well as filter and sort them. It re creates recurring tasks automatically. It`s a great tool to organize time and responsabilities</p>
                 <div class="flex">
                   <a href="https://github.com/AndresCpulveda/personal-planner-frontend" target="_blank" class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">code</a>
                   <a href="#projects" target="_blank" class="px-2 text-white border-2 border-white my-2 mr-4 hover:bg-white hover:text-slate-900 transition-all rounded-lg">demo</a>
@@ -78,17 +76,17 @@
               </div>
             </div>
           </div>
-          <div id="vet" class="main-card text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10 ml-32">
+          <div id="vet" class="main-card text-slate-300  mx-5 sm:mx-0"> 
+            <div class="flex flex-col gap-3 mb-10 sm:ml-32">
               <h3 class="text-2xl text-left">Check Out my:</h3>
-              <h1 class="colorful-header text-7xl truncate text-left">Vet CRM</h1>
+              <h1 class="colorful-header text-5xl truncate text-left">Vet CRM</h1>
             </div>
             <div class="presentation-cont relative flex items-center gap-6">
-              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
-              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
-              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
-              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
-              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
+              <div class="hidden sm:block bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="hidden sm:block bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="hidden sm:block bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="hidden sm:block bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="hidden sm:block bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">A CRM portal aimed for vet clinics in which multiple vets can sign up and login in order to administrate their patients, access is handled with JWT and crypted passwords, users can use a "forgot password" option. All accounts are confirmed via email</p>
                 <div class="flex">
@@ -98,17 +96,17 @@
               </div>
             </div>
           </div>
-          <div id="restaurant" class="main-card text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10 ml-32">
+          <div id="restaurant" class="main-card text-slate-300  mx-5 sm:mx-0"> 
+            <div class="flex flex-col gap-3 mb-10 sm:ml-32">
               <h3 class="text-2xl text-left">Check Out my:</h3>
-              <h1 class="colorful-header text-7xl truncate text-left">Restaurant Bill System</h1>
+              <h1 class="colorful-header text-5xl truncate text-left">Bill System</h1>
             </div>
             <div class="presentation-cont relative flex items-center gap-6">
-              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
-              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
-              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
-              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
-              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
+              <div class="hidden sm:block bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="hidden sm:block bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="hidden sm:block bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="hidden sm:block bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="hidden sm:block bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">App that allows users to create a restaurant bill, dishes can be added to the total order and total price is calculated at the end, tip may be added at the desired percentage</p>
                 <div class="flex">
@@ -118,17 +116,17 @@
               </div>
             </div>
           </div>
-          <div id="ecommerce" class="main-card text-slate-300"> 
-            <div class="flex flex-col gap-3 mb-10 ml-32">
+          <div id="ecommerce" class="main-card text-slate-300  mx-5 sm:mx-0"> 
+            <div class="flex flex-col gap-3 mb-10 sm:ml-32">
               <h3 class="text-2xl text-left">Check Out my:</h3>
-              <h1 class="colorful-header text-7xl truncate text-left">E-Commerce</h1>
+              <h1 class="colorful-header text-4xl md:text-5xl truncate text-left">E-Commerce</h1>
             </div>
             <div class="presentation-cont relative flex items-center gap-6">
-              <div class="bar-colorful h-4 w-3 rounded opacity-20"></div>
-              <div class="bar-colorful h-16 w-3 rounded opacity-40"></div>
-              <div class="bar-colorful h-24 w-3 rounded opacity-60"></div>
-              <div class="bar-colorful h-32 w-3 rounded opacity-80"></div>
-              <div class="bar-colorful h-40 w-3 rounded opacity-100"></div>
+              <div class="hidden sm:block bar-colorful h-4 w-3 rounded opacity-20"></div>
+              <div class="hidden sm:block bar-colorful h-16 w-3 rounded opacity-40"></div>
+              <div class="hidden sm:block bar-colorful h-24 w-3 rounded opacity-60"></div>
+              <div class="hidden sm:block bar-colorful h-32 w-3 rounded opacity-80"></div>
+              <div class="hidden sm:block bar-colorful h-40 w-3 rounded opacity-100"></div>
               <div>
                 <p class="text-left">Homepage for an E-commerce that shows multiple products that can be added to a cart, the products in the car are saved even when the user refreshes or closes the page</p>
                 <div class="flex">
@@ -139,13 +137,13 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col text-slate-300 gap-4">
+        <div class="relative flex flex-col text-slate-300 gap-4">
           <div>
             <h2 class="gradient-text text-4xl">Projects</h2>
           </div>
           <div class="relative flex flex-col w-fit">
             <!-- <div class="border-l- border-b- border-white h-40 w-2"></div> -->
-            <ul id="projects-list" class="flex flex-col gap-4">
+            <ul id="projects-list" class="flex flex-col gap-1 sm:gap-4">
               <li class="px-2 rounded-lg pt-4">
                 <span class="animation-to-projects-bottom-planner"></span>
                 <span class="animation-to-projects-left-planner"></span>
@@ -159,7 +157,7 @@
               <li class="px-2 rounded-lg pt-4">
                 <span class="animation-to-projects-bottom-restaurant"></span>
                 <span class="animation-to-projects-left-restaurant"></span>
-                <a id="restaurant-btn" href="">Restaurant Bill System</a>
+                <a id="restaurant-btn" href="">Bill System</a>
               </li>
               <li class="px-2 rounded-lg pt-4">
                 <span class="animation-to-projects-bottom-ecommerce"></span>
@@ -181,7 +179,7 @@
         </div>
       </section>
       <section class="rounded-md bg-slate-900 text-slate-300 flex flex-col gap-5 md:grid md:grid-cols-3 md:grid-rows-4 lg:grid-rows-2 p-3 sm:p-7" id="profile">
-        <img src="./medios/logoAS-no_bg-2.png" alt="" class="row-span-2 max-w-[10rem] sm:max-w-xs w-auto place-self-center md:max-h-80">
+        <img src="./medios/logoAS-no_bg-2.png" alt="" class="row-span-2 max-w-[15rem] sm:max-w-xs md:max-w-[15rem] lg:max-w-[20rem] w-auto place-self-center">
         <div class="flex flex-col justify-center order-first text-center md:col-span-2 lg:order-none lg:row-span-1 lg:col-span-1 lg:text-left">
           <h2 class="text-4xl sm:text-5xl font-bold">Andres Sepulveda</h2>
           <ul class="flex w-full justify-evenly mt-5 text-3xl">
@@ -247,7 +245,7 @@
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Node</a>
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Full Stack Apps</a>
           </div>
-          <div class="grid grid-cols-3 auto-rows-fr justify-evenly text-slate-300 gap-5" id="contenedor-proyectos">
+          <div class="grid grid-cols-3 auto-rows-fr justify-evenly text-slate-300 gap-5 hidden sm:block" id="contenedor-proyectos">
             <!-- ---------------- START PROJECTS 1------------- -->
             <div class="grid grid-rows-4 row-span-2 col-span-2 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
