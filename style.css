@@ -385,3 +385,19 @@ html {
   background-color: rgb(2 6 23);
   padding: 2.25rem;
 }
+
+#rotate-screen-icon {
+  animation: rotate_screen 1.5s linear infinite;
+}
+
+@keyframes rotate_screen {
+ 0% {
+
+ }
+ 30% {
+  transform: rotate(-90deg)
+}
+100%{
+  transform: rotate(-90deg)
+ } 
+}

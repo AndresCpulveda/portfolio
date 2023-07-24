@@ -14,7 +14,7 @@
   <div class="flex flex-col">
 
 
-    <header class="z-20 fixed bg-[#0000001a] w-full bg-gradient-to-r from-[#020617] to-[#192436] to-% flex justify-between items-center px-[20px]">
+    <header class="z-50 fixed bg-[#0000001a] w-full bg-gradient-to-r from-[#020617] to-[#192436] to-% flex justify-between items-center px-[20px]">
       <!-- <img class="max-w-[50px] h-[50px]" src="./medios/profilePhoto.png" alt=""> -->
       <img src="./medios/logoAS-mini-no_bg.png" onclick="goHome()" alt="website logo" class="w-12 h-12 my-2 cursor-pointer">
       <nav class="flex justify-between w-full">
@@ -245,9 +245,15 @@
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Node</a>
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Full Stack Apps</a>
           </div>
-          <div class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 auto-rows-fr justify-evenly text-slate-300 gap-5" id="contenedor-proyectos">
+          <div class="relative flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 auto-rows-fr justify-evenly text-slate-300 gap-5" id="contenedor-proyectos">
+            <div class="z-20 sticky top-40 w-fit left-0 bg-[#1e293baa] rounded-lg p-2 block sm:hidden">
+              <p class="text-[10px] text-black font-bold">rotate your phone</p>
+              <div class="h-20 w-20 text-3xl scale-x-[-1]">
+                <img src="./medios/screen-rotate.png" alt="screen rotate icon" class="transition-all max-w-20" id="rotate-screen-icon">
+              </div>
+            </div>
             <!-- ---------------- START PROJECTS 1------------- -->
-            <div class="grid grid-rows-4 row-span-2 row-span-2 col-span-2 max-h-screen">
+            <div class="z-10 grid grid-rows-4 row-span-2 row-span-2 col-span-2 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/mock-up-planner.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center flex place-items-center">
