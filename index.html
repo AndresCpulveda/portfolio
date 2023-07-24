@@ -234,7 +234,7 @@
         </div>
       </section>
       <section class="rounded-md bg-[#0000005e] rounded-xl w-full p-8 lg:p-16 text-center" id="projects">
-        <h2 class="text-slate-200 sm:text-3xl md:text-4xl lg:text-5xl py-1 tracking-widest mb-10">Projects</h2>
+        <h2 class="text-slate-200 text-3xl sm:text-3xl md:text-4xl lg:text-5xl py-1 tracking-widest mb-10">Projects</h2>
         <div class="container">
           <div class="flex flex-wrap justify-start gap-3 p-5 hidden">
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" id="all-filter-btn" tipo="all">All</a>
@@ -245,9 +245,9 @@
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Node</a>
             <a class="text-sm md:text-base border-2 border-neutral-600 text-neutral-600 rounded-md px-2 py-1 hover:bg-blue-600 hover:text-slate-300 hover:border-blue-600 transition-all" href="" tipo="node" id="node-filter-btn">Full Stack Apps</a>
           </div>
-          <div class="grid-cols-3 auto-rows-fr justify-evenly text-slate-300 gap-5 hidden sm:grid" id="contenedor-proyectos">
+          <div class="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 auto-rows-fr justify-evenly text-slate-300 gap-5" id="contenedor-proyectos">
             <!-- ---------------- START PROJECTS 1------------- -->
-            <div class="grid grid-rows-4 row-span-2 col-span-2 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 row-span-2 col-span-2 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/mock-up-planner.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center flex place-items-center">
@@ -265,9 +265,9 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-4 row-span-2 col-span-1 row-start-2 col-start-3 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 col-span-1 xl:row-start-2 col-start-1 xl:col-start-3 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
-                <div class="absolute card card-front bg-[url('./medios/projects/ss_api_crypto.png')] bg-top bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
+                <div class="absolute card card-front bg-[url('./medios/projects/ss_api_crypto.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
                   <p class="text-left text-2xl leading-[50px]">This small project let users select between the most popular cryptocurrencies at the moment and look for their current price, all data is fetched from an external API</p>
                 </div>
@@ -283,14 +283,14 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-4 row-span-3 col-span-1 col-start-2 row-start-3 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 xl:row-span-3 col-span-1 xl:col-start-2 xl:row-start-3 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/restaurant-mockup.png')] bg-top bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
                   <p class="text-left text-2xl leading-[60px]">App that allows users to create a restaurant bill, dishes can be added to the total order and total price is calculated at the end, tip may be added at the desired percentage</p>
                 </div>
               </div>
-              <div class="project-name row-span-1 bg-slate-800 w-full flex flex-col rounded-b-lg content-center justify-evenly px-3 py-10">
+              <div class="project-name row-span-1 bg-slate-800 w-full flex flex-col rounded-b-lg content-center justify-evenly px-3 py-2 md:py-10">
                 <h3 class="gradient-text text-left text-3xl leading-10">Restaurant Bill System</h3>
                 <div class="project-category relative flex flex-col overflow-hidden">
                   <h4 class="project-category-text text-left text-lg transition-all">- Vanilla JavaScript</h4>
@@ -301,15 +301,15 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-4 row-span-1 col-span-1 row-start-4 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 xl:row-span-1 col-span-2 xl:col-span-1 xl:row-start-4 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
-                <div class="absolute card card-front bg-[url('./medios/projects/apv-login-failed.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
+                <div class="absolute card card-front bg-[url('./medios/projects/apv-login-failed.png')] bg:top md:bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
                   <p class="text-left">A CRM portal aimed for vet clinics in which multiple vets can sign up and login in order to administrate their patients, access is handled with JWT and crypted passwords, users can use a "forgot password" option. All accounts are confirmed via email</p>
                 </div>
               </div>
               <div class="project-name row-span-1 bg-slate-800 w-full flex flex-col rounded-b-lg content-center justify-evenly px-3 p-1">
-                <h3 class="gradient-text text-left text-2xl">Veterinary CRM Portal (with login)</h3>
+                <h3 class="gradient-text text-left text-2xl md:text-3xl xl:text-2xl">Veterinary CRM Portal (with login)</h3>
                 <div class="project-category relative flex flex-col overflow-hidden">
                   <h4 class="project-category-text text-left text-lg transition-all">- Full Stack App</h4>
                   <div class="project-buttons absolute top-full flex transition-all">
@@ -319,7 +319,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-4 row-span-2 col-span-1 row-start-5 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 col-span-1 xl:row-start-5 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/ss_todo_react.png')] bg-top bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
@@ -337,7 +337,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-4 row-span-2 col-span-1 row-start-5 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 col-span-2 xl:col-span-1 xl:row-start-5 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/ss_carrito_localstorage.png')] bg-top bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
@@ -355,9 +355,9 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-rows-4 row-span-2 col-span-2 col-start-2 max-h-screen">
+            <div class="grid grid-rows-4 row-span-2 col-span-2 xl:col-start-2 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
-                <div class="absolute card card-front bg-[url('./medios/projects/batata-mockup.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
+                <div class="absolute card card-front bg-[url('./medios/projects/ss_landing_responsive.png')] sm:bg-[url('./medios/projects/batata-mockup.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
                 <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
                   <p class="text-left text-3xl leading-[55px] tracking-wide">Landing page created for Batatabit crypto exchange, it is mobile first designed and fully responsive. (demo project, not a real platform)</p>
                 </div>
