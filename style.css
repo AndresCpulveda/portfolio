@@ -10,6 +10,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html, body {
+  width:100%;
+  overflow-x: hidden;
+}
+
 .gradient-text {
   background-image: linear-gradient(90deg, #7e22ce, #2564eb);
   -webkit-background-clip: text;
