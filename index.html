@@ -41,7 +41,7 @@
         <div class="relative h-full sm:h-full container col-span-2 text-center w-full flex justify-center">
           <div id="name" class="main-card card-in text-slate-300 mx-5 sm:mx-0"> 
             <div class="flex flex-col gap-3 mb-10 sm:ml-32">
-              <h3 class="text-2xl text-left">Hey! I am:</h3>
+              <h3 class="text-2xl text-left opacity-70">Hey! I am:</h3>
               <h1 class="colorful-header text-5xl lg:text-6xl truncate text-left hidden md:block">Andres Sepulveda</h1>
               <h1 class="colorful-header text-5xl truncate text-left block md:hidden">Andres<br>Sepulveda</h1>
             </div>
@@ -256,7 +256,15 @@
             <div class="z-10 grid grid-rows-4 row-span-2 row-span-2 col-span-2 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/mock-up-planner.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
-                <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center flex place-items-center">
+                <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center flex flex-col place-items-center">
+                  <ul class="flex w-full justify-evenly my-5 text-3xl">
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-node-js"></i></li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z"></path>
+                   </svg>
+                  </ul>
                   <p class="text-left text-xl md:text-3xl leading-[55px] tracking-wide">I created this app to personally organize and measure my productivity. It allows me to add and manage tasks, as well as filter and sort them. It re creates recurring tasks automatically. It`s a great tool to organize time and responsabilities</p>
                 </div>
               </div>
@@ -275,7 +283,19 @@
             <div class="grid grid-rows-4 row-span-2 col-span-1 xl:row-start-2 col-start-1 xl:col-start-3 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/ss_api_crypto.png')] bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
-                <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
+                <div class="absoulte card h-full bg-slate-950 p-9 flex flex-col place-items-center">
+                  <ul class="flex w-full justify-evenly my-5 text-3xl">
+                    <li><i class="fa-brands fa-square-js"></i></li>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-api" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M4 13h5"></path>
+                      <path d="M12 16v-8h3a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-3"></path>
+                      <path d="M20 8v8"></path>
+                      <path d="M9 16v-5.5a2.5 2.5 0 0 0 -5 0v5.5"></path>
+                   </svg>
+                  </ul>
                   <p class="text-left text-2xl leading-[50px]">This small project let users select between the most popular cryptocurrencies at the moment and look for their current price, all data is fetched from an external API</p>
                 </div>
               </div>
@@ -293,7 +313,12 @@
             <div class="grid grid-rows-4 row-span-2 xl:row-span-3 col-span-1 xl:col-start-2 xl:row-start-3 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/restaurant-mockup.png')] bg-top bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
-                <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
+                <div class="absoulte card h-full bg-slate-950 p-9 flex flex-col place-items-center">
+                  <ul class="flex w-full justify-evenly my-5 text-3xl">
+                    <li><i class="fa-brands fa-square-js"></i></li>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt"></i></li>
+                  </ul>
                   <p class="text-left text-2xl leading-[60px]">App that allows users to create a restaurant bill, dishes can be added to the total order and total price is calculated at the end, tip may be added at the desired percentage</p>
                 </div>
               </div>
@@ -311,7 +336,20 @@
             <div class="grid grid-rows-4 row-span-2 xl:row-span-1 col-span-2 xl:col-span-1 xl:row-start-4 max-h-screen">
               <div class="relative project-card overflow-hidden row-span-3 rounded-t-lg">
                 <div class="absolute card card-front bg-[url('./medios/projects/apv-login-failed.png')] bg:top md:bg-center bg-no-repeat bg-cover rounded-t-lg h-full w-full duration-500"></div>
-                <div class="absoulte card h-full bg-slate-950 p-9 flex place-items-center">
+                <div class="absoulte card h-full bg-slate-950 px-9 flex flex-col place-items-center">
+                  <ul class="flex w-full justify-evenly my-5 text-3xl">
+                    <li><i class="fa-brands fa-react"></i></li>
+                    <li><i class="fa-brands fa-node-js"></i></li>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tailwind" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                      <path d="M20 12h-13l3 -3m0 6l-3 -3"></path>
+                    </svg>
+                  </ul>
                   <p class="text-left">A CRM portal aimed for vet clinics in which multiple vets can sign up and login in order to administrate their patients, access is handled with JWT and crypted passwords, users can use a "forgot password" option. All accounts are confirmed via email</p>
                 </div>
               </div>
@@ -440,7 +478,6 @@
       </section>
     </main>
     <footer>
-
     </footer>
   </div>
   <script src="./app.js"></script>

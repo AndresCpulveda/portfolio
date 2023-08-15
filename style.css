@@ -352,7 +352,7 @@ html, body {
 }
 
 .project-card:hover > .card-front {
-  transform: translateY(100%);
+  transform: translateY(90%);
 }
 
 .project-name:hover > .project-category .project-category-text {
